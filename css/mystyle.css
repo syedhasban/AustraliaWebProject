@@ -238,13 +238,96 @@ body{
 .call-us:before {
     background: url(../images/call.png) no-repeat;
 }
+
 @media only screen and (max-width:768px){
     .domain-new-hero{
         margin-top: 100px !important;
-
+    }
+    iframe{
+        max-width: 395px;
+        height: 500px;
+        max-height:100%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 1399px)
-.spec-notes p, .topbar {
-    font-size: 12px;
+{
+    .spec-notes p, .topbar {
+        font-size: 12px;
+    }
+}
+
+
+.why-hero {
+    background: url(../images/why-us-hero.jpg) center center no-repeat;
+    width: 100%;
+    height: 460px;
+    padding-top: 120px;
+    background-size: cover;
+    margin-top: 144px;
+}
+.why-hero h2 {
+    font-weight: 300 !important;
+    color: #FFF;
+    font-size: 50px !important;
+    margin-bottom: 20px;
+}
+.why-choose h2 {
+    font-weight: 300 !important;
+    color: #7f7f7f !important;
+    font-size: 40px;
+    padding: 65px 0 25px;
+}
+.why-jared h2 {
+    font-weight: 300;
+    color: #FFF;
+    font-size: 40px;
+    padding: 75px 0 30px;
+}
+.uptime-chart h2 {
+    color: #383b40;
+    text-align: left;
+    font-size: 45px;
+    line-height: 50px;
+}
+@media screen and (max-width: 1399px)
+{
+    .why-hero {
+        height: 400px;
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 1399px)
+{
+    .why-choose h2, .why-jared h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1399px)
+{
+    .why-choose h2, .why-jared h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1399px)
+{
+    .page-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1399px)
+{
+    .uptime-chart h2 {
+        line-height: 35px;
+    }
+}
+
+
+
+#blogListingSection1 {
+    background: url(../images/blog-hero.jpg) center center no-repeat!important;
+    padding: 70px 0 20px;
+    background-size: cover!important;
+    margin-top: 144px;
 }
