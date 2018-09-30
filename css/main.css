@@ -1,6 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
-
 *,
 body,
 html {
@@ -893,7 +892,6 @@ body* {
 }
 
 .testimonial {
-    background: url(../img/testimonial.jpg) top center no-repeat;
     height: 695px;
     background-size: cover
 }
@@ -10242,7 +10240,7 @@ input[name=customer_type]:checked+label:before {
 
 .ht-mob-heading h3 {
     font-size: 30px;
-    color: #FFF;
+    color: #FFF !important;
     font-weight: 400;
     margin-top: 0;
     padding-top: 20px;
@@ -10250,10 +10248,10 @@ input[name=customer_type]:checked+label:before {
 }
 
 .ht-mob-heading h4 {
-    color: #AAA;
-    font-size: 14px;
+    color: #AAA !important;
+    font-size: 14px !important;
     padding: 0 20px;
-    font-weight: 400;
+    font-weight: 400 !important;
     text-align: center
 }
 
@@ -10496,6 +10494,7 @@ input[name=customer_type]:checked+label:before {
 .ht-mob-heading h3:before {
     content: "";
 }
+
 
 /* VimeoPlayer - v3.4.4 - 2018-09-26 */
 
