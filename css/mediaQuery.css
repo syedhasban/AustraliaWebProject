@@ -1319,7 +1319,7 @@
         font-size: 25px
     }
     #pageLayout {
-        margin-top: 113px!important
+        margin-top: 22px!important
     }
     .testimonial-person::after,
     .testimonial-person::before {
@@ -4397,5 +4397,59 @@
     }
     .home-hero h1 {
         font-size: 25px!important
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #pageLayout {
+        margin-top: 22px!important;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .ssl-hero{
+        margin-top: 100px !important;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #pageLayout {
+        margin-top: -46px!important;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .why-hero{
+        margin-top: 111px !important;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    #blogListingSection1 {
+        padding: 50px 0 10px !important;
+        /* margin-top: -3px; */
+    }
+    .bannerWrap h1, .bannerWrap h2 {
+        font-size: 26px !important;
+    }
+}
+@media screen and (max-width: 767px){
+.reviews-hero
+{
+    margin-top: 110px !important;
+}
+}
+@media screen and (max-width: 768px)
+{
+    .contact-hero-new{
+        margin-top: 202px !important;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .contact-hero-new{
+        margin-top: 110px !important;
     }
 }

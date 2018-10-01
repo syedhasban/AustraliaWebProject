@@ -645,7 +645,7 @@ ul.custom-megamenu-row {
     height: 300px;
     padding-top: 80px;
     background-size: cover;
-    margin-top: 144px;
+    margin-top: 138px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -729,7 +729,7 @@ ul.custom-megamenu-row {
     height: 350px;
     padding-top: 80px;
     background-size: cover;
-    margin-top: 144px;
+    margin-top: 138px;
 }
 
 .contact-hero-new h1 {
@@ -885,7 +885,7 @@ ul.custom-megamenu-row {
     background: url(../images/blog-hero.jpg) center center no-repeat!important;
     padding: 70px 0 20px;
     background-size: cover!important;
-    margin-top: 144px;
+    margin-top: 138px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1108,3 +1108,5 @@ select.input-lg,
 /*my latest change*/
 
 @media(max-width:1200px) {}
+
+

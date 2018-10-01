@@ -389,6 +389,9 @@ body* {
     background-position: 0 45.947064%;
     background-size: 171.727749%
 }
+.footer-logo img {
+    width: 100%;
+}
 
 .hpheart {
     background-position: 0 50.021825%;
@@ -10249,7 +10252,7 @@ input[name=customer_type]:checked+label:before {
 
 .ht-mob-heading h4 {
     color: #AAA !important;
-    font-size: 14px !important;
+    /* font-size: 14px !important; */
     padding: 0 20px;
     font-weight: 400 !important;
     text-align: center
@@ -10498,13 +10501,6 @@ input[name=customer_type]:checked+label:before {
 
 /* VimeoPlayer - v3.4.4 - 2018-09-26 */
 
-@charset "UTF-8";
-.player,
-.player .card--contentInfo .card-image {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none
-}
 
 .player .hidden,
 .player .only-in-fullscreen {
