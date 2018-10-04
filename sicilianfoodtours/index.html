@@ -6,59 +6,422 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" >
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
 
+
+<style>
+    /*-------------------------------*/
+    /*            Overlay            */
+    /*-------------------------------*/
     
-    <header class="as">
-        
-        <nav class="navbar navbar-default tembus">
-            <div class="container-fliud">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span> 
-		      </button>
-                    <a class="navbar-brand" href="#"><img src="images/download.png" class="img-responsive" alt=""></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn">OUR TOURS</button>
-                                <div class="dropdown-content">
-                                  <a href="#">Palermo, Messina regions</a>
-                                  <a href="#">Ragusa region</a>
-                                  <a href="#">FAQ</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="#">ABOUT</a></li>
+    .overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(250, 250, 250, .8);
+        z-index: 1;
+    }
+    
+    #wrapper {
+        margin-left: 0;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    
+    #wrapper.toggled {
+        margin-left: -220px;
+    }
+    
+    #sidebar-wrapper {
+        z-index: 10000;
+        left: auto;
+        right: 0;
+        width: 0;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: #e12c2f;
+        border-color: #e12c2f;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    
+    #sidebar-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #wrapper.toggled #sidebar-wrapper {
+        width: 260px;
+    }
+    
+    #page-content-wrapper {}
+    
+    #wrapper.toggled #page-content-wrapper {}
+    /*-------------------------------*/
+    /*     Sidebar nav styles        */
+    /*-------------------------------*/
+    
+    .sidebar-nav {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-top: 22px;
+        padding: 22px;
+    }
+    
+    .sidebar-nav a {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1em;
+        color: rgba(255, 255, 255, .9);
+        display: block;
+        color: #ddd;
+        text-decoration: none;
+        padding: 10px 15px 10px 30px;
+    }
+    
+    .sidebar-nav li {
+        position: relative;
+        line-height: 20px;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .sidebar-nav li:before {}
+    
+    .sidebar-nav li a {
+        color: #fff;
+        white-space: normal;
+    }
+    
+    .sidebar-nav li:nth-child(2):before {
+        background-color: #ec1b5a;
+    }
+    
+    .sidebar-nav li:nth-child(3):before {
+        background-color: #79aefe;
+    }
+    
+    .sidebar-nav li:nth-child(4):before {
+        background-color: #314190;
+    }
+    
+    .sidebar-nav li:nth-child(5):before {
+        background-color: #279636;
+    }
+    
+    .sidebar-nav li:nth-child(6):before {
+        background-color: #7d5d81;
+    }
+    
+    .sidebar-nav li:nth-child(7):before {
+        background-color: #ead24c;
+    }
+    
+    .sidebar-nav li:nth-child(8):before {
+        background-color: #2d2366;
+    }
+    
+    .sidebar-nav li:nth-child(9):before {
+        background-color: #35acdf;
+    }
+    
+    .sidebar-nav li:hover:before,
+    .sidebar-nav li.open:hover:before {
+        width: 100%;
+        -webkit-transition: width 0.2s ease-in;
+        -moz-transition: width 0.2s ease-in;
+        -ms-transition: width 0.2s ease-in;
+        transition: width 0.2s ease-in;
+    }
+    
+    .sidebar-nav li a {}
+    
+    .sidebar-nav li a:hover,
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus,
+    .sidebar-nav li.open a:hover,
+    .sidebar-nav li.open a:active,
+    .sidebar-nav li.open a:focus {
+        color: #fff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    
+    .sidebar-nav>.sidebar-brand {
+        height: 65px;
+        font-size: 20px;
+        line-height: 44px;
+    }
+    
+    .sidebar-nav .dropdown-menu {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    /*-------------------------------*/
+    /*       Hamburger-Cross         */
+    /*-------------------------------*/
+    
+    .hamburger {
+        position: fixed;
+        top: 20px;
+        left: auto;
+        right: 0;
+        z-index: 50000;
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-right: 15px;
+        background: transparent;
+        border: none;
+    }
+    
+    .hamburger:hover,
+    .hamburger:focus,
+    .hamburger:active {
+        outline: none;
+    }
+    
+    .hamburger.is-closed,
+    .hamburger.is-open {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    
+    .hamburger.is-closed:before {
+        content: '';
+        display: block;
+        width: 100px;
+        font-size: 14px;
+        color: #fff;
+        line-height: 32px;
+        text-align: center;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-transition: all 0.35s ease-in-out;
+    }
+    
+    .hamburger.is-closed:hover:before {
+        opacity: 1;
+        display: block;
+        -webkit-transform: translate3d(-100px, 0, 0);
+        -webkit-transition: all 0.35s ease-in-out;
+    }
+    
+    .hamburger.is-closed .hamb-top,
+    .hamburger.is-closed .hamb-middle,
+    .hamburger.is-closed .hamb-bottom,
+    .hamburger.is-open .hamb-top,
+    .hamburger.is-open .hamb-middle,
+    .hamburger.is-open .hamb-bottom {
+        position: absolute;
+        left: 0;
+        height: 3px;
+        width: 100%;
+    }
+    
+    .hamburger.is-closed .hamb-top,
+    .hamburger.is-closed .hamb-middle,
+    .hamburger.is-closed .hamb-bottom {
+        background-color: #fff;
+    }
+    
+    .hamburger.is-closed .hamb-top {
+        top: 0;
+        -webkit-transition: all 0.35s ease-in-out;
+    }
+    
+    .hamburger.is-closed .hamb-middle {
+        top: 28%;
+    }
+    
+    .hamburger.is-closed .hamb-bottom {
+        top: 18px;
+        -webkit-transition: all 0.35s ease-in-out;
+    }
+    
+    .hamburger.is-closed:hover .hamb-top {
+        top: 0;
+        -webkit-transition: all 0.35s ease-in-out;
+    }
+    
+    .hamburger.is-closed:hover .hamb-bottom {
+        top: 17px;
+        -webkit-transition: all 0.35s ease-in-out;
+    }
+    
+    .hamburger.is-open {
+        left: auto;
+        right: 255px;
+    }
+    
+    .hamburger.is-open .hamb-top,
+    .hamburger.is-open .hamb-middle,
+    .hamburger.is-open .hamb-bottom {
+        background-color: #fff;
+    }
+    
+    .hamburger.is-open .hamb-top,
+    .hamburger.is-open .hamb-bottom {
+        top: 50%;
+        margin-top: -2px;
+    }
+    
+    .hamburger.is-open .hamb-top {
+        -webkit-transform: rotate(45deg);
+        -webkit-transition: -webkit-transform 0.2s cubic-bezier(.73, 1, .28, .08);
+    }
+    
+    .hamburger.is-open .hamb-middle {
+        display: none;
+    }
+    
+    .hamburger.is-open .hamb-bottom {
+        -webkit-transform: rotate(-45deg);
+        -webkit-transition: -webkit-transform 0.2s cubic-bezier(.73, 1, .28, .08);
+    }
+    
+    .hamburger.is-open:before {
+        content: '';
+        display: block;
+        width: 100px;
+        font-size: 14px;
+        color: #fff;
+        line-height: 32px;
+        text-align: center;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-transition: all 0.35s ease-in-out;
+    }
+    
+    .hamburger.is-open:hover:before {
+        opacity: 1;
+        display: block;
+        -webkit-transform: translate3d(-100px, 0, 0);
+        -webkit-transition: all 0.35s ease-in-out;
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <div class="overlay"></div>
+
+        <!-- Sidebar -->
+        <nav class=" navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR TOURS <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
                     </ul>
-                </div>
-            </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
+        <!-- /#sidebar-wrapper -->
 
-        <div class="banner clearfix">
-            <div class="color-overlay"></div>
-            <div class="tbl">
-                <div class="tbl-cell desc-wrapper">
-                    <p>You haven’t been to Italy unless you’ve been to Sicily</p>
-                    <h1>SICILIAN FOOD TOURS</h2>
-                        <a href="#" class="abtn">Learn More</a>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+            </button>
+
+
+
+            <header>
+                <nav class="navbar navbar-default tembus">
+                    <div class="container-fliud">
+                        <div class="navbar-header">
+
+                            <a class="navbar-brand" href="#"><img src="images/download.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right hidden-xs">
+                                <li><a href="#">Home</a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="dropbtn">OUR TOURS</button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Palermo, Messina regions</a>
+                                            <a href="#">Ragusa region</a>
+                                            <a href="#">FAQ</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">ABOUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+
+                <div class="banner clearfix">
+                    <div class="color-overlay"></div>
+                    <div class="tbl">
+                        <div class="tbl-cell desc-wrapper">
+                            <p>You haven’t been to Italy unless you’ve been to Sicily</p>
+                            <h1>SICILIAN FOOD TOURS</h2>
+                                <a href="#" class="abtn">Learn More</a>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
 
-        </div>
-
-        <!-- <div class="banner-thu-wrapper has-description" data-content-field="main-image" data-collection-id="59e17c46197aea84342d217f" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
+                <!-- <div class="banner-thu-wrapper has-description" data-content-field="main-image" data-collection-id="59e17c46197aea84342d217f" data-edit-main-image="Banner" data-annotation-alignment="bottom left">
 
             <div class="color-overlay"></div>
             <figure id="thu" style="overflow: hidden;">
@@ -74,89 +437,126 @@
                 <p><a href="">Learn More</a></p>
             </div>
         </div> -->
-    </header>
+            </header>
 
-    <div class="main-page clearfix">
-            <div class="row clearfix">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <div class="heading">
-                        <h1>
-                            Imagine the excitement and wonder as you explore the breathtakingly <br>
-                            beautiful island of Sicily with Sicilian Food Tours.
-                        </h1>
+            <div class="main-page clearfix">
+                <div class="row clearfix">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <div class="heading">
+                            <h1>
+                                Imagine the excitement and wonder as you explore the breathtakingly <br> beautiful island of Sicily with Sicilian Food Tours.
+                            </h1>
+                        </div>
                     </div>
-                </div>
-                <div class="main-img">
+                    <div class="main-img">
                         <div class="col-md-6 col-sm-6 text-center">
-                                <img src="images/agrigento.jpg" class="img-responsive" alt="">
-                                <div class="block-cont">
-                                    <h2>RAGUSA</h2>
-                                    <strong>8 – 14 June 2018</strong>
-                                    <p>This tour commences in the undiscovered south coast of Sicily, at
-                                        the small fishing village of Scoglitti, and explores the beautiful
-                                        attractions of Siracusa, Noto and Agrigento.</p>
-                                    <h5>Learn More →</h5>
-                                </div>
+                            <img src="images/agrigento.jpg" class="img-responsive" alt="">
+                            <div class="block-cont">
+                                <h2>RAGUSA</h2>
+                                <strong>8 – 14 June 2018</strong>
+                                <p>This tour commences in the undiscovered south coast of Sicily, at the small fishing village of Scoglitti, and explores the beautiful attractions of Siracusa, Noto and Agrigento.</p>
+                                <h5>Learn More →</h5>
                             </div>
-                            <div class="col-md-6 col-sm-6 text-center">
-                                <img src="images/erice+and+terrasini2.jpg" class="img-responsive" alt="">
-                                <div class="block-cont">
-                                    <h2>PALERMO & MESSINA</h2>
-                                    <strong>29 May – 4 June 2018</strong>
-                                    <p>This tour commences in Sicily’s capital Palermo, known for its
-                                         history, culture, architecture and world renowned street food. We  
-                                         also visit the nearby seaside town of Terrasini, the historical medieval town of Erice and more.</p>
-                                    <h5>Learn More →</h5>
-                                </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 text-center">
+                            <img src="images/erice+and+terrasini2.jpg" class="img-responsive" alt="">
+                            <div class="block-cont">
+                                <h2>PALERMO & MESSINA</h2>
+                                <strong>29 May – 4 June 2018</strong>
+                                <p>This tour commences in Sicily’s capital Palermo, known for its history, culture, architecture and world renowned street food. We also visit the nearby seaside town of Terrasini, the historical medieval town of Erice and
+                                    more.
+                                </p>
+                                <h5>Learn More →</h5>
                             </div>
+                        </div>
+                    </div>
+                    <hr class="cus-hr">
                 </div>
-                <hr class="cus-hr">
-            </div><!-- end row -->
+                <!-- end row -->
 
-    <div class="our-guest">
-            <div class="row text-center">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <img class="text-center" src="images/unnamed.jpg" class="img-responsive" alt="">
-                    <h1>Carmel, and her Sicilian family welcome you with open arms, giving you an insider’s view of life on the island.</h1>
-                    <p>You’ll get to experience Sicily like a local and won’t ever want to leave.</p>
-                    <h5>See what our guests say  →</h5>
+                <div class="our-guest">
+                    <div class="row text-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <img class="text-center" src="images/unnamed.jpg" class="img-responsive" alt="">
+                            <h1>Carmel, and her Sicilian family welcome you with open arms, giving you an insider’s view of life on the island.</h1>
+                            <p>You’ll get to experience Sicily like a local and won’t ever want to leave.</p>
+                            <h5>See what our guests say →</h5>
+                        </div>
+                    </div>
+                    <hr class="cus-hr">
                 </div>
+
+                <div class="video">
+                    <div class="row text-center">
+                        <div class="col-md-12 col-sm-12">
+                            <iframe src="https://www.youtube.com/embed/aBks3t5WTjw?wmode=opaque&amp;enablejsapi=1" height="480" width="100%" scrolling="no" frameborder="0" allowfullscreen=""><br/></iframe>
+                        </div>
+                    </div>
+                    <hr class="cus-hr">
+                    <h1>Never miss out on a tour again</h1>
+                    <p>Sign up for our e-news</p>
+                    <form class="text-center">
+                        <label>Email</label><br>
+                        <input type="email"><br><br>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
             </div>
-            <hr class="cus-hr">
+            <!-- end main  -->
+
+        </div>
+        <!--End page Content div-->
     </div>
 
-    <div class="video">
-            <div class="row text-center">
-                <div class="col-md-12 col-sm-12">
-                    <iframe src="https://www.youtube.com/embed/aBks3t5WTjw?wmode=opaque&amp;enablejsapi=1" height="480" width="100%" scrolling="no" frameborder="0" allowfullscreen=""><br/></iframe>
-                </div>
-            </div>
-            <hr class="cus-hr">
-            <h1>Never miss out on a tour again</h1>
-            <p>Sign up for our e-news</p>
-            <form class="text-center">
-                <label>Email</label><br>
-                <input type="email"><br><br>
-                <button type="submit">Subscribe</button>
-            </form>
+    <div class="mini-footer">
+        <i class="fa fa-facebook"></i>
     </div>
 
-    </div> <!-- end main  -->
-
-
-<div class="mini-footer">
-    <i class="fa fa-facebook"></i>
-</div>
-
+<<<<<<< HEAD
 <footer>
         <p class="back">Back To Top</p>
     <p class="text-center"><a href="#">Contact Carmel</a>
     &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
 </footer>
+=======
+    <footer>
+        <p class="text-center"><a href="#">Contact Carmel</a> &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
+    </footer>
+>>>>>>> 4cb155cbddac636c4218bed88f0bcaa91955f592
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            var trigger = $('.hamburger'),
+                overlay = $('.overlay'),
+                isClosed = false;
+
+            trigger.click(function() {
+                hamburger_cross();
+            });
+
+            function hamburger_cross() {
+
+                if (isClosed == true) {
+                    overlay.hide();
+                    trigger.removeClass('is-open');
+                    trigger.addClass('is-closed');
+                    isClosed = false;
+                } else {
+                    overlay.show();
+                    trigger.removeClass('is-closed');
+                    trigger.addClass('is-open');
+                    isClosed = true;
+                }
+            }
+
+            $('[data-toggle="offcanvas"]').click(function() {
+                $('#wrapper').toggleClass('toggled');
+            });
+        });
+    </script>
 
 </body>
 
