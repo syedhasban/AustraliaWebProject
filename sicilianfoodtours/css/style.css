@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Muli:300i,400,700');
+body {
+    font-family: 'Muli', sans-serif;
+}
 h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin: 0;
@@ -57,7 +61,7 @@ a.navbar-brand img {
 }
 nav.navbar.navbar-default.tembus {
     position: absolute;
-    z-index: 500;
+    z-index: 5000;
     width: 100%;
 }
 ul.nav.navbar-nav.navbar-right {
@@ -73,10 +77,9 @@ ul.nav.navbar-nav.navbar-right {
 	background-color: transparent;
 }
 ul.nav.navbar-nav.navbar-right li a{
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
-    font-family: proxima-nova;
+    font-family: 'Muli', sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 13px;
@@ -94,7 +97,7 @@ ul.nav.navbar-nav.navbar-right li a{
     color:white !important;
     background-color: transparent;
 }
-#promotedGalleryWrapper .color-overlay, .promoted-gallery-wrapper .color-overlay, .banner-thu-wrapper .color-overlay, .sqs-featured-posts-gallery .color-overlay {
+.color-overlay{
     position: absolute;
     top: 0;
     right: 0;
@@ -103,6 +106,7 @@ ul.nav.navbar-nav.navbar-right li a{
     background-color: rgba(0,0,0,.3);
     z-index: 99;
 }
+
 #thu {
     position: absolute;
     top: 0;
@@ -118,27 +122,45 @@ ul.nav.navbar-nav.navbar-right li a{
     min-height: 320px;
     width: 100%;
 }
-.desc-wrapper {
-    -webkit-animation: feature-text-anim .75s ease-in-out;
-    animation: feature-text-anim .75s ease-in-out;
-    z-index: 100;
+
+.banner {
+    height: 392px;
+    background: url('../images/banner1.jpg')no-repeat;
+    background-size: cover;
     position: relative;
-    width: 100%;
-    max-width: 956px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 66px auto;
-    padding: 32px;
-    text-align: center;
-    text-rendering: optimizeLegibility;
+    background-position: center;
 }
+.banner2 {
+    height: 392px;
+    background: url('../images/Sicily16_2064R2.jpg')no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.tbl {
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.tbl-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.desc-wrapper {
+    position: relative;
+    position: relative;
+    z-index: 1000;
+    padding: 32px;
+}
+
 .desc-wrapper p {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: adobe-garamond-pro;
     font-style: normal;
     font-size: 18px;
     letter-spacing: 0px;
-    font-family: adobe-garamond-pro;
     font-weight: 400;
     font-style: italic;
     font-size: 24px;
@@ -149,31 +171,32 @@ ul.nav.navbar-nav.navbar-right li a{
     margin: 20px auto;
     -webkit-transform: translatez(0);
 }
-.desc-wrapper p>strong, .desc-wrapper p>em>strong {
+
+.desc-wrapper h1 {
     display: block;
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Muli', sans-serif;
     font-weight: 400;
     font-size: 48px;
     letter-spacing: 0px;
     text-transform: none;
-    font-family: proxima-nova;
-    font-weight: 700;
+    font-weight: bolder;
     font-style: normal;
     font-size: 68px;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     line-height: 1em;
     color: #fff;
 }
-.desc-wrapper p:last-child>a {
+
+.desc-wrapper .abtn {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Muli', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    border-radius: 40px;
     letter-spacing: 1px;
-    font-family: proxima-nova;
     font-weight: 600;
     font-style: normal;
     font-size: 15px;
@@ -189,11 +212,17 @@ ul.nav.navbar-nav.navbar-right li a{
     margin: 10px 0;
     color: #fff;
     border: none;
-    -webkit-transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
-    -moz-transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
-    -ms-transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
-    -o-transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
-    transition: background-color .1s 0s ease-in-out,color .1s 0s ease-in-out;
+    -webkit-transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
+    -moz-transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
+    -ms-transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
+    -o-transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
+    transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
+    margin-top: 20px;
+}
+
+.desc-wrapper .abtn:hover {
+    background-color: rgba(225, 44, 47, .8);
+    text-decoration: none;
 }
 .desc-wrapper p a {
     color: #fff;
@@ -202,7 +231,6 @@ ul.nav.navbar-nav.navbar-right li a{
 .heading h1{
     /* padding: 100px 0; */
     margin-bottom: 100px;
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-family: adobe-garamond-pro;
     font-weight: 400;
     font-style: normal;
@@ -238,7 +266,6 @@ ul.nav.navbar-nav.navbar-right li a{
 }
 .block-cont h2 {
     color: #e12c2f;
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 32px;
     letter-spacing: 0px;
     text-transform: none;
@@ -291,7 +318,6 @@ hr.cus-hr {
     height: 1px;
 }
 .our-guest h1{
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-family: adobe-garamond-pro;
     font-weight: 400;
     font-style: normal;
@@ -324,7 +350,6 @@ hr.cus-hr {
     width: 100% !important;
 }
 .video h1{
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-family: adobe-garamond-pro;
     font-weight: 400;
     font-style: normal;
@@ -422,7 +447,6 @@ footer p a{
 }
 
 .right-side h1 {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 48px;
     font-family: adobe-garamond-pro;
     font-weight: 400;
