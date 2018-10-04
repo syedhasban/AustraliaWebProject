@@ -28,8 +28,8 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(250, 250, 250, .8);
-        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2000;
     }
     
     #wrapper {
@@ -192,7 +192,7 @@
     /*-------------------------------*/
     
     .hamburger {
-        position: fixed;
+        position: absolute;
         top: 20px;
         left: auto;
         right: 0;
@@ -282,6 +282,7 @@
     }
     
     .hamburger.is-open {
+        position: fixed;
         left: auto;
         right: 255px;
     }
@@ -349,11 +350,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR TOURS <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
 
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="#">Palermo, Messina regions</a></li>
+                        <li><a href="#">Ragusa region</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -361,10 +360,6 @@
                     <ul class="dropdown-menu" role="menu">
 
                         <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
                     </ul>
                 </li>
             </ul>
@@ -513,17 +508,10 @@
         <i class="fa fa-facebook"></i>
     </div>
 
-<<<<<<< HEAD
-<footer>
-        <p class="back">Back To Top</p>
-    <p class="text-center"><a href="#">Contact Carmel</a>
-    &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
-</footer>
-=======
     <footer>
+        <h4 style="display: none;">Back To Top</h4>
         <p class="text-center"><a href="#">Contact Carmel</a> &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
     </footer>
->>>>>>> 4cb155cbddac636c4218bed88f0bcaa91955f592
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
