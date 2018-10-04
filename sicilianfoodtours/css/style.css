@@ -791,13 +791,13 @@ footer p a{
     font-weight: 400;
     font-style: normal;
     margin-bottom: 20px;
-    color: rgba(197, 197, 197, 0.9);
+    color:rgba(26, 26, 26, 0.7);
 }
 .italic {
     font-style: italic;
     line-height: 29px;
     font-size: 18px;
-    color: rgba(136, 136, 136, 0.9);
+    color:rgba(26, 26, 26, 0.7) !important;
 }
 .pal-r span{
     font-size: 80px;
@@ -830,7 +830,72 @@ footer p a{
     font-weight: 400;
     font-style: normal;
     margin-bottom: 20px;
-    color: rgba(136, 136, 136, 0.9);
+    color:rgba(26, 26, 26, 0.7);
+} 
+
+.pal-bt button{
+    padding: 25px 46px;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #e12c2f;
+    border-color: #e12c2f;
+    border-radius: 0;
+    text-align: center !important;
+    margin: 20px 0;
+}
+.pal-content h1 {
+    font-family: adobe-garamond-pro;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 28px;
+    color: rgba(26, 26, 26, 0.9);
+}
+.pal-content h2 {
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #4a4a4a;
+}
+.pal-content img{
+    width: 100%;
+}
+.pal-content p {
+    font-family: adobe-garamond-pro;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 29px;
+    color: rgba(26, 26, 26, 0.7);
+}
+.pal-content p span{
+    color: #e12c2f;
+}
+.pal-content ul li{
+    font-family: adobe-garamond-pro;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    Color: rgba(26, 26, 26, 0.7);
+}
+.pal-content .food3 h1{
+    margin-top: 20px;
+    font-family: adobe-garamond-pro;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    Color: rgba(26, 26, 26, 0.9);
 }
 footer p
 {
@@ -845,9 +910,7 @@ footer h4{
     padding: 20px 0;
 }
 @media only screen and (max-width: 1440px){
-    .back{
-        display: none;
-    }
+    
 }
 @media only screen and (max-width: 1024px){
     .our-guest h1{
