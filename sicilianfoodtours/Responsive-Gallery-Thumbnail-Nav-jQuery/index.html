@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mada|Sedgwick+Ave" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Mada|Sedgwick+Ave" rel="stylesheet">
+	
+</head>
+<body>
+<header>
+	<a class="logo" href="https://github.com/totonaq/Gallery-Plugin">gallery.js</a>
+	<button class="bar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+	<nav>
+		<ul id="list">
+			<li><a href="#demo">Demo</a></li>
+			<li><a href="#options">Options</a></li>
+			<li><a href="https://github.com/totonaq/Gallery-Plugin/archive/master.zip">Download</a></li>
+		</ul>
+	</nav>
+</header>
+	
+
+		<div class="container-gallery">
+			
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/India_-_Delhi_smiling_girls_-_4698.jpg" alt="">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Smiling_Bhutanese_school_children.jpg/492px-Smiling_Bhutanese_school_children.jpg" alt="">
+			<img src="https://static.pexels.com/photos/61100/pexels-photo-61100.jpeg" alt="">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Dil_Se_Education_-_Smiling_Child_at_School.JPG" alt="">
+			<img src="https://c.pxhere.com/photos/34/87/girl_indian_girl_female_young_asian_adult_face_model-626357.jpg!d" alt="">
+			<img src="https://images.pexels.com/photos/160914/smile-man-worker-vertical-160914.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="">
+			<img src="https://c.pxhere.com/photos/d6/f9/girl_smile_face_smiling_happy_portrait_people_eyes-1087629.jpg!d" alt="">
+			<img src="https://c.pxhere.com/photos/39/52/kid_smile_child_happy_smiling_people_children_young-897665.jpg!d" alt="">
+			<img src="http://www.publicdomainpictures.net/pictures/70000/velka/woman-smiling.jpg" alt="">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Japanese_schoolboys_smiling.jpg" alt="">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/A_Smile_at_Last_%28Imagicity_617%29.jpg/800px-A_Smile_at_Last_%28Imagicity_617%29.jpg" alt="">
+			<img src="https://images.pexels.com/photos/34540/old-lady-smile-beautiful-woman.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="">
+		</div>
+		<div class="container-gal">
+		
+
+			
+		</div>
+
+<section id="options" class="options">
+	
+	<h1>options</h1>
+	<!--<div class="options-descr-wrap">
+		<p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis animi vero quidem fuga dolorum voluptates non iste asperiores numquam quam totam nesciunt repellendus sunt, explicabo ipsam veritatis exercitationem. Iste, odio!</p>
+	</div>-->
+	<div class="options-descr-wrap">
+		<p class="descr">Olny 6 options to customize the plugin
+		<span class="footnote"><span class="resp">responsive</span> is not an option but a generalized title for gallery's breakpoints</span>
+		</p>
+	</div>
+	<div class="options-list">
+		<h4 class="option-head">height</h4>
+		<p class="option-item">
+			Type:
+			<code>Number</code> or <code>String</code><br>
+			Default:
+			<code>600</code><br>
+		</p>
+		<p class="option-item">Height of the main image</p>
+		<hr>
+		<h4 class="option-head">showThumbnails</h4>
+		<p class="option-item">
+			Type:
+			<code>Boolean</code><br>
+			Default:
+			<code>true</code><br>
+			
+		</p>
+		<p class="option-item">Show or hide thumbnails</p>
+		<hr>
+		<h4 class="option-head">thumbHeight</h4>
+		<p class="option-item">
+			Type:
+			<code>Number</code><br>
+			Default:
+			<code>150</code><br>
+			
+		</p>
+		<p class="option-item">Thumbnails height</p>
+		<hr>
+		<h4 class="option-head">singleLine</h4>
+		<p class="option-item">
+			Type:
+			<code>Boolean</code><br>
+			Default:
+			<code>false</code><br>
+			
+		</p>
+		<p class="option-item">Shows thumbnails in one line or as a tiles grid</p>
+		<hr>
+		<h4 class="option-head">items</h4>
+		<p class="option-item">
+			Type:
+			<code>Number</code><br>
+			Default:
+			<code>3</code><br>
+			
+		</p>
+		<p class="option-item">The number of items you want to see on the screen</p>
+		<hr>
+		<h4 class="option-head">customControls</h4>
+		<p class="option-item">
+			Type:
+			<code>Object</code><br>
+			Default:
+			<code>svg</code> icons<br>
+			
+		</p>
+		<p class="option-item">Object containing two properties: <code>prevButton</code>
+			and <code>nextButton</code></p>
+		<hr>
+		<h4 class="option-head">responsive</h4>
+		<p class="option-item">
+			You can also set any properties depending on gallery width.<br>
+			For example: 
+			<pre><code>	768: {
+		height: <span class="opt-value">300</span>,
+		showThumbnails: <span class="opt-value">false</span>,
+		items: <span class="opt-value">4</span>,
+		singleLine: <span class="opt-value">true</span>,
+		thumbHeight: <span class="opt-value">50</span>
+	}</code></pre>
+These properties will be applied from 768px gallery width (not screen width).
+		</p>
+	</div>
+</section>
+<section id="styles" class="styles">
+	<h1>classes</h1>
+	<div class="styles-descr-wrap">
+		<p class="descr">Use these classes to customize your gallery. Set any icons in place of <code>...</code> to make your control buttons more attractive</p>
+	</div>
+	
+	<pre>
+<code>
+	<span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"container-gallery"</span>&gt;</span>
+	    <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"large-img"</span>&gt;</span>
+	        <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"controls"</span>&gt;</span>
+	            <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"prev-button inactive"</span>&gt;...</span><span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	            <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"next-button"</span>&gt;...</span><span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	        <span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	    <span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	    <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"thmb-wrap"</span>&gt;</span>
+	        <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"thumbnails"</span>&gt;</span>
+	            <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"gallery-item active"</span>&gt;</span><span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	            <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"gallery-item"</span>&gt;</span><span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	            <span class="g-tag">&lt;<span class="g-title">div </span><span class="g-attribute">class</span>=<span class="g-value">"gallery-item"</span>&gt;</span><span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	        <span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	    <span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+	<span class="g-tag">&lt;/<span class="g-title">div</span>&gt;</span>
+</code>
+	</pre>
+	<!--<div class="styles-img">
+		<img src="images/classes3.png" alt="">
+	</div>
+	<div class="styles-list">
+		<h4 class="style-head">.container-gallery</h4>
+		<p class="style-item">Default container for initializing the plugin. It can have any name</p>
+		<hr>
+		<h4 class="style-head">.large-img</h4>
+		<p class="style-item">Main image</p>
+		<hr>
+		<h4 class="style-head">.controls</h4>
+		<p class="style-item">Controls wrapper</p>
+		<hr>
+		<h4 class="style-head">.prev-button</h4>
+		<p class="style-item">Previous button</p>
+		<hr>
+		<h4 class="style-head">.next-button</h4>
+		<p class="style-item">Next button</p>
+		<hr>
+		<h4 class="style-head">.inactive</h4>
+		<p class="style-item">Additional class for buttons when the last (or first) image is reached</p>
+		<hr>
+		<h4 class="style-head">.thmb-wrap</h4>
+		<p class="style-item">Thumbnails block wrapper</p>
+		<hr>
+		<h4 class="style-head">.gallery-item</h4>
+		<p class="style-item">Single thumbnail</p>
+		<hr>
+		<h4 class="style-head">.active</h4>
+		<p class="style-item">Additional class for a thumbnail of the current image</p>
+	</div>-->
+</section>
+<footer>
+	<h5>
+		<a href="https://iamden.xyz">iamden &copy;</a>
+	</h5>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='gallery.js'></script>
+<script>
+	document.querySelector(".bar").addEventListener("click", function() {
+			var list = document.querySelector("#list");
+			list.classList.toggle("visible");
+		});
+</script>
+<script>
+    $(document).ready(function () {
+
+
+        $('.container-gallery').gallery({
+            height: '35vw',
+            width: '35vw',
+            items: 6,
+            singleLine: true,
+            thumbHeight: '10vw',
+            showThumbnails: true,
+
+            0: {
+                height: 200,
+                items: 2,
+                thumbHeight: 50
+            },
+            320: {
+                height: 300,
+                items: 3,
+                thumbHeight: 70
+            },
+            480: {
+                height: 300,
+                thumbHeight: 100,
+                items: 3
+
+            },
+            600: {
+                height: 300,
+                items: 4
+            },
+            768: {
+
+                //showThumbnails: false,
+                items: 4
+                //height: 300,
+                //thumbHeight: 50
+            },
+
+
+
+        });
+    });
+		
+	</script>
+</body>
+</html>

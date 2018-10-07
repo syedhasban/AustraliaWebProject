@@ -327,7 +327,7 @@ h1,h2,h3,h4,h5,h6,p{
 .dropbtn {
     background-color: transparent;
     color: rgba(255,255,255,.9);
-    padding: 11px;
+    padding: 9px;
     font-size: 16px;
     border: none;
     font-weight: 600;
@@ -396,13 +396,13 @@ ul.nav.navbar-nav.navbar-right {
 	border-bottom: 2px solid #ecf0f1;
 	background-color: transparent;
 }
-ul.nav.navbar-nav.navbar-right li a{
+ul.nav.navbar-nav.navbar-right li a {
     letter-spacing: 1px;
     font-family: 'Muli', sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 14px;
+    letter-spacing: 1px;
     display: block;
     text-transform: uppercase;
     text-decoration: none;
@@ -413,6 +413,11 @@ ul.nav.navbar-nav.navbar-right li a{
 
 .tembus{
 	background-color: transparent !important;
+}
+.tembus-fqs{
+    background-color: #e12c2f !important;
+    padding: 2px 0 22px 0;
+    border-radius: 0;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color:white !important;
@@ -452,8 +457,15 @@ ul.nav.navbar-nav.navbar-right li a{
     background-position: center;
 }
 .banner2 {
-    height: 392px;
+    height: 303px;
     background: url('../images/Sicily16_2064R2.jpg')no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.banner3 {
+    height: 303px;
+    background: url('../images/Sicily16_1635.jpg')no-repeat;
     background-size: cover;
     position: relative;
     background-position: center;
@@ -751,15 +763,16 @@ footer p a{
 }
 .left-side h3 {
     line-height: 20px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     font-style: normal;
     color: #1a1a1a;
     font-family: 'Muli', sans-serif;
+    margin-top: 10px;
 }
 .left-side h4 {
     line-height: 26px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     font-style: normal;
     color: #c9c6c6;
@@ -832,6 +845,14 @@ footer p a{
     margin-bottom: 20px;
     color:rgba(26, 26, 26, 0.7);
 } 
+.p-italic{
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+    color:rgba(26, 26, 26, 0.7);
+}
 
 .pal-bt button{
     padding: 25px 46px;
@@ -853,8 +874,17 @@ footer p a{
     margin-bottom: 20px;
     font-weight: 400;
     font-style: normal;
-    font-size: 32px;
-    line-height: 28px;
+    font-size: 33px;
+    line-height: 38px;
+    color: rgba(26, 26, 26, 0.9);
+}
+.pal-content .pal-r h1{
+    font-family: adobe-garamond-pro;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 38px;
     color: rgba(26, 26, 26, 0.9);
 }
 .pal-content h2 {
@@ -897,6 +927,15 @@ footer p a{
     line-height: 38px;
     Color: rgba(26, 26, 26, 0.9);
 }
+.pal-content .food3 h1 span{
+    margin-top: 20px;
+    font-family: adobe-garamond-pro;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    Color: #e12c2f;
+}
 footer p
 {
     color: white;
@@ -935,5 +974,8 @@ footer h4{
     }
     .desc-wrapper p strong{
         font-size: 28px;
+    }
+    .left-side{
+        display: none;
     }
 }
