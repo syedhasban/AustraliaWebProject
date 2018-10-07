@@ -978,4 +978,21 @@ footer h4{
     .left-side{
         display: none;
     }
+    .pal-bt button{
+        padding: 21px 34px;
+        font-size: 15px;
+    }
+    .hr.cus-hr{
+        clear: both;
+        border-style: none;
+        border-width: 0;
+        margin: 27px auto;
+        color: rgba(26,26,26,.15);
+        background-color: rgba(26,26,26,.15);
+        border: none;
+        /* color: #bbb; */
+        /* background-color: #bbb; */
+        height: 1px;
+    }
+    
 }
