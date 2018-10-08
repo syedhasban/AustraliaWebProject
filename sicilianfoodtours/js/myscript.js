@@ -29,47 +29,91 @@ $(document).ready(function() {
 
 
 // slidr
-$(document).ready(function () {
-    
-    
-    $('.container-gallery').gallery({
-        height: '35vw',
-        width: '35vw',
-        items: 6,
-        singleLine: true,
-        thumbHeight: '10vw',
-        showThumbnails: true,
-
-        0: {
-            height: 200,
-            items: 2,
-            thumbHeight: 50
-        },
-        320: {
-            height: 300,
-            items: 3,
-            thumbHeight: 70
-        },
-        480: {
-            height: 300,
-            thumbHeight: 100,
-            items: 3
-
-        },
-        600: {
-            height: 300,
-            items: 4
-        },
-        768: {
-
-            //showThumbnails: false,
-            items: 4
-            //height: 300,
-            //thumbHeight: 50
-        },
+$(document).ready(function() {
 
 
 
-    });
 });
 // end slider
+
+
+
+
+jQuery(document).ready(function() {
+
+
+
+    var have_resize = $('.have-resize');
+    have_resize.owlCarousel({
+
+
+        navText: ["<a class='control_prev'><i class='fa fa-long-arrow-left'></i></a>",
+            " <a class='control_next'><i class='fa fa-long-arrow-right'></i></a>"
+        ],
+
+        loop: true,
+        //   dots: false,
+        responsiveClass: true,
+        items: 1
+            //autoWidth: true,
+            // responsive: {
+
+        //     320: {
+        //         items: 1,
+        //         stagePadding: 10,
+        //         margin: 10
+        //     },
+
+        //     430: {
+        //         items: 2,
+        //         stagePadding: 40,
+        //         margin: 35,
+        //         nav: false
+        //     },
+        //     992: {
+        //         items: 1,
+        //         nav: true
+        //     }
+        // }
+
+    });
+
+
+
+    dotcount = 1;
+
+    jQuery('.owl-dot').each(function() {
+        jQuery(this).addClass('dotnumber' + dotcount);
+        jQuery(this).attr('data-info', dotcount);
+        dotcount = dotcount + 1;
+    });
+
+    slidecount = 1;
+
+    jQuery('.owl-item').not('.cloned').each(function() {
+        jQuery(this).addClass('slidenumber' + slidecount);
+        slidecount = slidecount + 1;
+    });
+
+    jQuery('.owl-dot').each(function() {
+
+        grab = jQuery(this).data('info');
+
+        slidegrab = jQuery('.slidenumber' + grab + ' img').attr('src');
+        console.log(slidegrab);
+
+        jQuery(this).css("background-image", "url(" + slidegrab + ")");
+
+    });
+
+    amount = jQuery('.owl-dot').length;
+    gotowidth = 100 / amount;
+
+    jQuery('.owl-dot').css("width", gotowidth + "%");
+    newwidth = jQuery('.owl-dot').width();
+    jQuery('.owl-dot').css("height", newwidth + "px");
+
+
+
+
+});
