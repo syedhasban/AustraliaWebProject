@@ -69,38 +69,6 @@ jQuery(document).ready(function() {
     });
 
 
-    var have_resize = $('.have-resize');
-    have_resize.owlCarousel({
-
-
-
-
-        loop: true,
-        //   dots: false,
-        responsiveClass: true,
-        items: 1
-            //autoWidth: true,
-            // responsive: {
-
-        //     320: {
-        //         items: 1,
-        //         stagePadding: 10,
-        //         margin: 10
-        //     },
-
-        //     430: {
-        //         items: 2,
-        //         stagePadding: 40,
-        //         margin: 35,
-        //         nav: false
-        //     },
-        //     992: {
-        //         items: 1,
-        //         nav: true
-        //     }
-        // }
-
-    });
 
 
     var sync1 = $("#sync1");

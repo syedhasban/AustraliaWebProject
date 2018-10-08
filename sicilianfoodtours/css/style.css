@@ -73,10 +73,6 @@ p {
     width: 260px;
 }
 
-#page-content-wrapper {}
-
-#wrapper.toggled #page-content-wrapper {}
-
 
 /*-------------------------------*/
 
@@ -360,7 +356,6 @@ p {
     font-weight: 600;
     font-family: 'Muli', sans-serif;
     font-style: normal;
-    
 }
 
 .dropdown {
@@ -517,6 +512,7 @@ ul.nav.navbar-nav.navbar-right li a {
     position: relative;
     background-position: center;
 }
+
 .banner4 {
     height: 303px;
     background: url('../images/tes-ban.jpg')no-repeat;
@@ -524,6 +520,7 @@ ul.nav.navbar-nav.navbar-right li a {
     position: relative;
     background-position: center;
 }
+
 .banner5 {
     height: 303px;
     background: url('../images/contact.jpg')no-repeat;
@@ -1042,23 +1039,28 @@ footer p a {
     line-height: 38px;
     Color: #e12c2f;
 }
+
 .md-form input {
     background-color: #faf9f9;
     height: 45px;
 }
-.md-form textarea{
+
+.md-form textarea {
     background-color: #faf9f9;
     height: 150px;
 }
+
 a.btn.btn-primary.submit-btn {
     background-color: black;
     border-radius: 0;
     padding: 13px 47px;
 }
-.md-form label{
+
+.md-form label {
     font-size: 10px;
     color: gray;
 }
+
 footer p {
     color: white;
     text-align: center;
@@ -1071,11 +1073,10 @@ footer h4 {
     color: white;
     padding: 20px 0;
 }
+
 .slider-1 {
     margin-bottom: 20px;
 }
-
-.owl-carousel .owl-stage:first-child {}
 
 .have-resize {
     margin-bottom: 30px;
@@ -1213,9 +1214,9 @@ footer h4 {
         display: block;
         text-align: center;
     }
-    .tbl h1{
+    .tbl h1 {
         font-size: 70px;
-         margin-top: 36px;
+        margin-top: 36px;
     }
 }
 
@@ -1246,10 +1247,10 @@ footer h4 {
         /* background-color: #bbb; */
         height: 1px;
     }
-    .main-page{
+    .main-page {
         padding: 40px 20px;
     }
-    .tbl h1{
+    .tbl h1 {
         font-size: 40px;
     }
 }
