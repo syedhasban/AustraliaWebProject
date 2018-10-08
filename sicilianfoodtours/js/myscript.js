@@ -41,6 +41,12 @@ $(document).ready(function() {
 
 jQuery(document).ready(function() {
 
+    var owl = $('.slider-1');
+
+    owl.owlCarousel({
+        dots: false,
+        items: 3
+    });
 
 
     var have_resize = $('.have-resize');
@@ -82,7 +88,9 @@ jQuery(document).ready(function() {
 
     dotcount = 1;
 
-    jQuery('.owl-dot').each(function() {
+    var owldot = $(".have-resize .owl-dot");
+
+    owldot.each(function() {
         jQuery(this).addClass('dotnumber' + dotcount);
         jQuery(this).attr('data-info', dotcount);
         dotcount = dotcount + 1;
