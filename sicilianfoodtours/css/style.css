@@ -515,6 +515,20 @@ ul.nav.navbar-nav.navbar-right li a {
     position: relative;
     background-position: center;
 }
+.banner4 {
+    height: 303px;
+    background: url('../images/Sicily16_1635.jpg')no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.banner5 {
+    height: 303px;
+    background: url('../images/Sicily16_1635.jpg')no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
 
 .tbl {
     display: table;
@@ -1024,7 +1038,8 @@ footer p a {
     line-height: 38px;
     Color: #e12c2f;
 }
-
+form#contact-form{
+}
 footer p {
     color: white;
     text-align: center;
