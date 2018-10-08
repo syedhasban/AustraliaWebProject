@@ -353,12 +353,14 @@ p {
 .dropbtn {
     background-color: transparent;
     color: rgba(255, 255, 255, .9);
-    padding: 9px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: 2px;
     border: none;
     font-weight: 600;
     font-family: 'Muli', sans-serif;
     font-style: normal;
+    
 }
 
 .dropdown {
@@ -439,8 +441,8 @@ ul.nav.navbar-nav.navbar-right li a {
     font-family: 'Muli', sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 13px;
+    letter-spacing: 2px;
     display: block;
     text-transform: uppercase;
     text-decoration: none;
@@ -517,14 +519,14 @@ ul.nav.navbar-nav.navbar-right li a {
 }
 .banner4 {
     height: 303px;
-    background: url('../images/Sicily16_1635.jpg')no-repeat;
+    background: url('../images/tes-ban.jpg')no-repeat;
     background-size: cover;
     position: relative;
     background-position: center;
 }
 .banner5 {
     height: 303px;
-    background: url('../images/Sicily16_1635.jpg')no-repeat;
+    background: url('../images/contact.jpg')no-repeat;
     background-size: cover;
     position: relative;
     background-position: center;
@@ -992,6 +994,7 @@ footer p a {
 
 .pal-content img {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .pal-content p {
@@ -1031,14 +1034,24 @@ footer p a {
 .pal-content .food3 h1 span {
     margin-top: 20px;
     font-family: adobe-garamond-pro;
-    ;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
     Color: #e12c2f;
 }
-form#contact-form{
+.md-form input {
+    background-color: #f1f1f1;
+    height: 45px;
+}
+.md-form textarea{
+    background-color: #f1f1f1;
+    height: 150px;
+}
+a.btn.btn-primary.submit-btn {
+    background-color: black;
+    border-radius: 0;
+    padding: 13px 47px;
 }
 footer p {
     color: white;
@@ -1057,7 +1070,7 @@ footer h4 {
 
 @media only screen and (max-width: 1024px) {
     .our-guest h1 {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 }
 
@@ -1072,6 +1085,10 @@ footer h4 {
         display: block;
         text-align: center;
     }
+    .tbl h1{
+        font-size: 70px;
+         margin-top: 36px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1085,8 +1102,9 @@ footer h4 {
         display: none;
     }
     .pal-bt button {
-        padding: 21px 34px;
-        font-size: 15px;
+        font-size: 10px;
+        padding: 12px;
+        margin-bottom: 0px;
     }
     .hr.cus-hr {
         clear: both;
@@ -1099,5 +1117,11 @@ footer h4 {
         /* color: #bbb; */
         /* background-color: #bbb; */
         height: 1px;
+    }
+    .main-page{
+        padding: 40px 20px;
+    }
+    .tbl h1{
+        font-size: 40px;
     }
 }
