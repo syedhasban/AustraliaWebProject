@@ -477,6 +477,13 @@ ul.nav.navbar-nav.navbar-right li a {
     position: relative;
     background-position: center;
 }
+.banner5 {
+    height: 303px;
+    background: url('../images/contact.jpg')no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
 .tbl {
     display: table;
     width: 100%;
@@ -778,6 +785,7 @@ footer p a{
     margin-top: 10px;
 }
 .left-side h4 {
+    letter-spacing: 2px;
     line-height: 26px;
     font-size: 14px;
     font-weight: 600;
