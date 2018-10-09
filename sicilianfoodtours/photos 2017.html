@@ -102,55 +102,80 @@
                 </nav>
 
             </header>
-
+            <style>
+                .mansoary-div .grid__sizer,
+                .mansoary-div .grid__item {
+                    position: relative;
+                    width: 32.2%;
+                    min-width: 16.25rem;
+                }
+                
+                .mansoary-div .fa {
+                    pointer-events: auto;
+                }
+                
+                .mansoary-div .item__overlay:focus,
+                .mansoary-div .item__overlay:hover {
+                    pointer-events: none;
+                }
+                
+                .mansoary-div .fa-search {
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -17px;
+                    left: 50%;
+                    margin-left: -20px;
+                    border: solid 2px #e12c2f;
+                    background: #e12c2f;
+                    color: white;
+                    padding: 10px;
+                    /* text-shadow: 1px 1px; */
+                }
+            </style>
             <div class=" main-page clearfix">
 
                 <div class="mansoary-div">
                     <section class=" container-fluid gallery bg-faded">
-                        <header>
-                            <h1 class="text-center">Masonry Gallery</h1>
-                        </header>
+
                         <div class="grid">
                             <a href="#" class="grid__item grid__sizer">
-                                <div class="item__overlay">
-                                    <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button"> <i class="fa fa-plus"></i></button>
-                                </div>
+                                <i class="fa fa-search js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture"></i>
                                 <img src="images/photo-mansory/masonary1.jpg" />
                             </a>
                             <a href="#" class="grid__item grid__sizer">
                                 <div class="item__overlay">
-                                    <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+                                    <i value="Expand photo" role="button" class="fa fa-plus" data-toggle="modal" data-target="#modalPicture"></i>
                                 </div>
                                 <img src="images/photo-mansory/masonary2.jpg" />
                             </a>
 
                             <a href="#" class="grid__item grid__sizer">
                                 <div class="item__overlay">
-                                    <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+                                    <i value="Expand photo" role="button" class="fa fa-plus" data-toggle="modal" data-target="#modalPicture"></i>
                                 </div>
                                 <img src="images/photo-mansory/masonary3.jpg" />
                             </a>
                             <a href="#" class="grid__item grid__sizer">
                                 <div class="item__overlay">
-                                    <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
-                                </div>
-                                <img src="images/photo-mansory/masonary4.jpg" />
-                            </a>
-                            <a href="#" class="grid__item grid__sizer">
-                                <div class="item__overlay">
-                                    <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+                                    <i value="Expand photo" role="button" class="fa fa-plus" data-toggle="modal" data-target="#modalPicture"></i>
                                 </div>
                                 <img src="images/photo-mansory/masonary4.jpg" />
                             </a>
                             <a href="#" class="grid__item grid__item--high">
                                 <div class="item__overlay">
-                                    <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+                                    <i value="Expand photo" role="button" class="fa fa-plus" data-toggle="modal" data-target="#modalPicture"></i>
                                 </div>
-                                <img src="images/photo-mansory/masonary2.jpg" />
+                                <img src="images/photo-mansory/masonary5.jpg" />
+                            </a>
+                            <a href="#" class="grid__item grid__sizer">
+                                <div class="item__overlay">
+                                    <i value="Expand photo" role="button" class="fa fa-plus" data-toggle="modal" data-target="#modalPicture"></i>
+                                </div>
+                                <img src="images/photo-mansory/masonary6.jpg" />
                             </a>
                             <a href="#" class="grid__item">
                                 <div class="item__overlay">
-                                    <button class="js-button btn btn-secondary-outline center-block" data-toggle="modal" data-target="#modalPicture" type="button" value="Expand photo" role="button">Expand photo</button>
+                                    <i value="Expand photo" role="button" class="fa fa-plus" data-toggle="modal" data-target="#modalPicture"></i>
                                 </div>
                                 <img src="images/photo-mansory/masonary3.jpg" />
                             </a>
