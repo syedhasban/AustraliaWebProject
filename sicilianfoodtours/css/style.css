@@ -1067,10 +1067,12 @@ a.btn.btn-primary.submit-btn {
     font-size: 10px;
     color: gray;
 }
-.padd-r{
+
+.padd-r {
     padding-right: 2px;
 }
-.padd-l{
+
+.padd-l {
     padding-left: 2px;
 }
 
@@ -1237,10 +1239,10 @@ footer h4 {
         font-size: 70px;
         margin-top: 36px;
     }
-    .desc-wrapper p{
+    .desc-wrapper p {
         margin-top: 40px;
     }
-    .pal-bt button{
+    .pal-bt button {
         margin-bottom: 10px;
         font-size: 20px;
     }
@@ -1248,7 +1250,8 @@ footer h4 {
         height: 300px;
     } */
 }
-@media only screen and (max-width: 500px){
+
+@media only screen and (max-width: 500px) {
     .tbl h1 {
         font-size: 40px;
     }
@@ -1284,4 +1287,51 @@ footer h4 {
     .main-page {
         padding: 40px 20px;
     }
+}
+
+
+/*mansory*/
+
+.mansoary-div .item__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.45);
+    transition: background-color 0.55s ease-in-out;
+}
+
+.mansoary-div .item__overlay:focus,
+.mansoary-div .item__overlay:hover {
+    background-color: rgba(17, 17, 17, 0.05);
+}
+
+.mansoary-div .item__overlay:focus>button,
+.mansoary-div .item__overlay:hover>button {
+    opacity: 1;
+}
+
+.mansoary-div .grid__sizer,
+.mansoary-div .grid__item {
+    position: relative;
+    width: 19.35%;
+    min-width: 16.25rem;
+}
+
+.mansoary-div .grid__item {
+    margin-bottom: 0.9375rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.mansoary-div .grid__item--high,
+.mansoary-div .grid__item--high img {
+    height: 30rem;
+}
+
+.mansoary-div img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
