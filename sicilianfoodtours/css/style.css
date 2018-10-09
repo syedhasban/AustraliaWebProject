@@ -490,7 +490,8 @@ ul.nav.navbar-nav.navbar-right li a {
 }
 
 .banner {
-    height: 392px;
+    padding: 40px 0;
+    min-height: 400px;
     background: url('../images/banner1.jpg')no-repeat;
     background-size: cover;
     position: relative;
@@ -498,7 +499,8 @@ ul.nav.navbar-nav.navbar-right li a {
 }
 
 .banner2 {
-    height: 303px;
+    padding: 40px 0;
+    min-height: 400px;
     background: url('../images/Sicily16_2064R2.jpg')no-repeat;
     background-size: cover;
     position: relative;
@@ -506,7 +508,8 @@ ul.nav.navbar-nav.navbar-right li a {
 }
 
 .banner3 {
-    height: 303px;
+    padding: 40px 0;
+    min-height: 400px;
     background: url('../images/Sicily16_1635.jpg')no-repeat;
     background-size: cover;
     position: relative;
@@ -514,7 +517,8 @@ ul.nav.navbar-nav.navbar-right li a {
 }
 
 .banner4 {
-    height: 303px;
+    padding: 40px 0;
+    min-height: 400px;
     background: url('../images/tes-ban.jpg')no-repeat;
     background-size: cover;
     position: relative;
@@ -522,7 +526,8 @@ ul.nav.navbar-nav.navbar-right li a {
 }
 
 .banner5 {
-    height: 303px;
+    padding: 40px 0;
+    min-height: 400px;
     background: url('../images/contact.jpg')no-repeat;
     background-size: cover;
     position: relative;
@@ -842,6 +847,7 @@ footer p a {
 }
 
 .left-side h3 {
+    letter-spacing: 2px;
     line-height: 20px;
     font-size: 14px;
     font-weight: 600;
@@ -852,6 +858,7 @@ footer p a {
 }
 
 .left-side h4 {
+    letter-spacing: 2px;
     line-height: 26px;
     font-size: 14px;
     font-weight: 600;
@@ -1060,6 +1067,12 @@ a.btn.btn-primary.submit-btn {
     font-size: 10px;
     color: gray;
 }
+.padd-r{
+    padding-right: 2px;
+}
+.padd-l{
+    padding-left: 2px;
+}
 
 footer p {
     color: white;
@@ -1195,7 +1208,13 @@ footer h4 {
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 1440px) {
+    .pal-bt button {
+        font-size: 15px;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+}
 
 @media only screen and (max-width: 1024px) {
     .our-guest h1 {
@@ -1218,6 +1237,21 @@ footer h4 {
         font-size: 70px;
         margin-top: 36px;
     }
+    .desc-wrapper p{
+        margin-top: 40px;
+    }
+    .pal-bt button{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    /* .banner2, .banner3, .banner4, .banner5{
+        height: 300px;
+    } */
+}
+@media only screen and (max-width: 500px){
+    .tbl h1 {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1231,9 +1265,9 @@ footer h4 {
         display: none;
     }
     .pal-bt button {
-        font-size: 10px;
+        font-size: 14px;
         padding: 12px;
-        margin-bottom: 0px;
+        margin-bottom: 15px;
     }
     .hr.cus-hr {
         clear: both;
@@ -1249,8 +1283,5 @@ footer h4 {
     }
     .main-page {
         padding: 40px 20px;
-    }
-    .tbl h1 {
-        font-size: 40px;
     }
 }
