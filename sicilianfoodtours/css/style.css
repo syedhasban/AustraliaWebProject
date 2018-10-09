@@ -1302,16 +1302,6 @@ footer h4 {
     transition: background-color 0.55s ease-in-out;
 }
 
-.mansoary-div .item__overlay:focus,
-.mansoary-div .item__overlay:hover {
-    background-color: rgba(17, 17, 17, 0.05);
-}
-
-.mansoary-div .item__overlay:focus>button,
-.mansoary-div .item__overlay:hover>button {
-    opacity: 1;
-}
-
 .mansoary-div .grid__sizer,
 .mansoary-div .grid__item {
     position: relative;
@@ -1334,4 +1324,37 @@ footer h4 {
     width: 100%;
     max-width: 100%;
     height: auto;
+}
+
+.mansoary-div button {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: 50%;
+    margin-left: -20px;
+    border: solid 2px white;
+    background: none;
+    color: white;
+}
+
+.mansoary-div .grid a {
+    cursor: default;
+}
+
+.mansoary-div button:hover .item__overlay {
+    background-color: rgba(17, 17, 17, 0.05);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.mansoary-div .item__overlay:focus,
+.mansoary-div .item__overlay:hover {
+    background-color: rgba(17, 17, 17, 0.05);
+    pointer-events: none;
+}
+
+.mansoary-div .item__overlay:focus>button,
+.mansoary-div .item__overlay:hover>button {
+    opacity: 1;
+    pointer-events: none;
 }
