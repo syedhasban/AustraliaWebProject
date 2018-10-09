@@ -13,14 +13,29 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
+
+    <Style>
+        .left-side .rag_nav {
+            color: #000 !important;
+        }
+        
+        nav .rag_nav {
+            color: #fff !important;
+        }
+        
+        .tour_nav {
+            color: #fff !important;
+        }
+    </Style>
+
 </head>
 
 <body>
     <div id="wrapper">
-            <div class="overlay"></div>
-        
-        
-        <!-- Sidebar -->
+        <div class="overlay"></div>
+
+
+        <!-- Sidebar mobile -->
         <nav class=" navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
 
@@ -38,378 +53,435 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
-        
-                        <ul class="dropdown-menu" role="menu">
 
-                            <li><a href="testimonial.html">TESTIMONIALS</a></li>
-                            <li><a href="photos 2017.html">PHOTOS 2017</a></li>
-                            <li><a href="#">PHOTOS 2016</a></li>
-                            <li><a href="#">PHOTOS 2015</a></li>
-                            <li><a href="conatct.html">CONTACT</a></li>
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li><a href="testimonial.html">TESTIMONIALS</a></li>
+                        <li><a href="photos 2017.html">PHOTOS 2017</a></li>
+                        <li><a href="photos 2016.html">PHOTOS 2016</a></li>
+                        <li><a href="photos 2015.html">PHOTOS 2015</a></li>
+                        <li><a href="conatct.html">CONTACT</a></li>
                     </ul>
 
                 </li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
-        
-        
-            <div id="page-content-wrapper">
-                <!--right side menu button-->
-                <button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
-                        <span class="hamb-top"></span>
-                        <span class="hamb-middle"></span>
-                        <span class="hamb-bottom"></span>
-                    </button>
-        
-                <!--Header-->
-        
-                <header>
-    
-                        <nav class="navbar navbar-default tembus">
-                            <div class="container-fliud">
-                                <div class="navbar-header">
-                                    <a class="navbar-brand" href="#"><img src="images/download.png" class="img-responsive" alt=""></a>
-                                </div>
-                                <div class="collapse navbar-collapse" id="myNavbar">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li>
-                                            <div class="dropdown">
-                                                <button class="dropbtn">OUR TOURS</button>
-                                                <div class="dropdown-content">
-                                                    <a href="Palermo.html">Palermo, Messina regions</a>
-                                                    <a href="ragusa.html">Ragusa region</a>
-                                                    <a href="FQS.html">FAQ</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="dropdown">
-                                                    <button class="dropbtn">ABOUT</button>
-                                                    <div class="dropdown-content">
-                                                    <a href="testimonial.html">TESTIMONIALS</a>
-                                                    <a href="photos 2017.html">PHOTOS 2017</a>
-                                                    <a href="photos 2017.html">PHOTOS 2016</a>
-                                                    <a href="photos 2017.html">PHOTOS 2015</a>
-                                                    <a href="conatct.html">CONTACT</a>
-                                                    </div>
-                                            </div>
-                                    </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                
-                        <div class="banner3 clearfix">
-                            <div class="color-overlay"></div>
-                            <div class="tbl">
-                                <div class="tbl-cell desc-wrapper">
-                                    <p>The undiscovered south coast of Sicily</p>
-                                    <h1>8 – 14 JUNE 2018</h2>
-                                </div>
-                            </div>
-                
+
+
+        <div id="page-content-wrapper">
+            <!--right side menu button-->
+            <button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+           </button>
+
+            <!--Header-->
+
+            <header>
+
+                <nav class="navbar navbar-default tembus">
+                    <div class="container-fliud">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html"><img src="images/download.png" class="img-responsive" alt=""></a>
                         </div>
-                
-                    </header>
-                
-                    <div class="main-page clearfix">
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li> <a href="index.html" class="home_nav">Home</a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropbtn tour_nav">OUR TOURS</a>
+                                        <div class="dropdown-content">
+                                            <a href="Palermo.html" class="pal_nav">PALERMO, MESSINA REGIONS</a>
+                                            <a href="ragusa.html" class="rag_nav">RAGUSA REGION </a>
+                                            <a href="FQS.html" class="faq_nav">FAQ</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropbtn about_nav">ABOUT</a>
+                                        <div class="dropdown-content">
+                                            <a href="testimonial.html" class="test_nav">TESTIMONIALS</a>
+                                            <a href="photos 2017.html" class="p217">PHOTOS 2017</a>
+                                            <a href="photos 2016.html" class="p216">PHOTOS 2016</a>
+                                            <a href="photos 2015.html" class="p215">PHOTOS 2015</a>
+                                            <a href="conatct.html" class="con_nav">CONTACT</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="banner clearfix" style="background: url('images/banners/ragusa_banner.jpg')no-repeat">
+                    <div class="color-overlay"></div>
+                    <div class="tbl">
+                        <div class="tbl-cell desc-wrapper">
+                            <p>The undiscovered south coast of Sicily</p>
+                            <h1>8 – 14 JUNE 2018</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="main-page clearfix">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 visible-xs">
+                        <div class="left-side">
+                            <nav class="navbar navbar-fixed-right navbar-minimal animate" role="navigation">
+                                <div class="navbar-toggler animate">
+                                    <span class="menu-icon"></span>
+                                </div>
+                                <ul class="navbar-menu animate">
+                                    <li>
+                                        <a href="#about-us" class="animate">
+                                            <span class="desc animate"> <h2>Our tours</h2> </span>
+                                            <span class="glyphicon glyphicon-user"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#blog" class="animate">
+                                            <span class="desc animate"> <h3> PALERMO, MESSINA <br> REGIONS</h3> </span>
+                                            <span class="glyphicon glyphicon-info-sign"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact-us" class="animate">
+                                            <span class="desc animate"> <h4>RAGUSA REGION <br> FAQ</h4> </span>
+                                            <span class="glyphicon glyphicon-comment"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 hidden-xs">
+                        <div class="left-side">
+                            <h2>Our tours</h2>
+                            <a href="Palermo.html" class="pal_nav">PALERMO, MESSINA REGIONS<a>
+                                        <a href="ragusa.html"  class="rag_nav">RAGUSA REGION </a>
+                            <a href="FQS.html" class="faq_nav">FAQ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8">
+                        <div class="pal-content">
                             <div class="row">
-                                <div class="col-md-3 col-sm-4 .d-sm-none .d-md-block">
-                                    <div class="left-side">
-                                        <h2>Our tours</h2>
-                                        <h4>PALERMO, MESSINA <br> REGIONS</h4>
-                                        <h3>RAGUSA REGION </h3>
-                                        <h4>FAQ</h4>
+                                <div class="col-sm-push-6 col-md-6 col-sm-6 text-center">
+                                    <div class="pal-r">
+                                        <span class="text-center">“</span>
+                                        <h1>It’s been a dream of mine to take people from all over the world through my island of Sicily to experience it the way I do.</h1>
+                                        <h4>— Carmel x</h4>
+                                        <img src="images/wom.jpg" class="img-responsive" alt="">
                                     </div>
                                 </div>
-                                <div class="col-md-9 col-sm-8">
-                                    <div class="pal-content">
-                                        <div class="row">
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="pal-l">
-                                                        <h1>Join restaurateur Carmel Ruggeri as she takes you through her part of the world, her island, Sicilia.</h1>
-                                                        <p>Immerse yourself in Sicilian food and culture through Carmel’s eyes and that of her Sicilian family.
-                                                            <div class="italic">
-                                                                    "Sharing pure and simple local food and immersing them in the true rustic charm of my Sicily. The cannoli, the cheese, the tomatoes… simple produce you will never ever forget."
-                                                                
-                                                                    "My family will open their homes to you and share the warmth and feasts that I experience every time I visit."
-                                                                        
-                                                                    "There is so much to do and see on this picturesque island," says Carmel. "I’m offering you a taste of Sicily’s great food and inevitably pure enjoyment. The Sicilians are warm people and I promise, you will leave your heart there just as I have so many times before."
-                                                            </div>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6 text-center">
-                                                    <div class="pal-r">
-                                                        <span class="text-center">“</span>
-                                                        <h1>It’s been a dream of mine to take people from all over the world through my island of Sicily to experience it the way I do.</h1>
-                                                        <h4>— Carmel x</h4>
-                                                        <img src="images/wom.jpg" class="img-responsive" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    <p>
-                                            Share a once-in-a-lifetime experience on the beautiful island of Sicily, where the mountains meet the sea and family and food are its heart and soul.
-                                            <br><br>
-                                            This tour commences in the undiscovered south coast of Sicily, at the small fishing village of Scoglitti, and explores the beautiful attractions of Siracusa, Noto and Agrigento.
-                                                                        
-                                    </p>
-                                    <div class="pal-bt text-center">
-                                        <button type="button" class="btn btn-danger">DOWNLOAD BROCHURE</button><br>
-                                        <button type="button" class="btn btn-danger">BOOK NOW</button>
-                                    </div>
-                                    <hr class="cus-hr">
-                
-                                    <div class="owl-carousel owl-theme slider-1">
-                                        <div id="galleryitem_1" class="item">
-                                            <img src="images/pal-slid-1.jpeg" />
-                                        </div>
-                                        <div id=" galleryitem_2 " class="item ">
-                                            <img src="images/pal-slid-2.JPG" />
-                                        </div>
-                                        <div id="galleryitem_3 " class="item ">
-                                            <img src="images/pal-slid-3.jpg" />
-                                        </div>
-                                        <div id="galleryitem_4 " class="item ">
-                                            <img src="images/pal-slid-4.jpg" />
-                                        </div>
-                                        <div id="galleryitem_5 " class="item ">
-                                            <img src="images/pal-slid-5.jpg" />
-                                        </div>
-        
-                                    </div>
-                
-                                    <h1>Itinerary</h1>
-                                    <h2>FRIDAY 8 JUNE – CATANIA TO SCOGLITTI</h2>
-                                    <p>
-                                        We meet at Catania Airport for a bus trip to the undiscovered south coast of Sicily to the small fishing village of Scoglitti overlooking the Mediterranean Sea. Here we settle into our beachfront hotel for lunch on the beach where we sample the first of our many Sicilian delights prepared by cousin Carmel, who also gives us our first cooking class.
-                                    </p>
-                
-                                    <p>
-                                        Carmel will then take us on an afternoon walk around the town, our home for the next seven days, including a stopover at the fish markets. We will of course stop for our first gelato at Carmel’s cousin Franco’s bar.
-                                    </p>
-                
-                                    <p>
-                                        In the evening, dinner at one of Scoglitti’s best restaurants for a 15 course degustation.
-                                    </p>
-                
-                                    <div class="italic">
-                                        Inclusions: lunch & dinner
-                                    </div><br>
-                
-                                    <h2>
-                                        SATURDAY 9 JUNE – MODICA, VALLE DELL’ACATE WINERY AND RAGUSA IBLA
-                                    </h2>
-                
-                                    <p>
-                                        We spend the morning discovering the beautiful Baroque Valley of Ragusa, Modica. Here we visit Antica Dolceria Bonajuto, the oldest chocolate factory in Sicily founded in 1880. <div class="p-italic">The New York Times called it “...chocolate of astonishingly pure, powerful flavor.”</div>
-                                    </p>
-                
-                                    <p>
-                                        We then visit the Valle dell’Acate winery run by the Jacono family where our host Giovanni Carbone takes us through the original 19th century palmento for a tasting of Frappato, Nero D’avola and Cerasuolo, Sicily’s only DOCG wine, this is followed by a light rustic Sicilian lunch.
-                                    </p>
-                
-                                    <p>
-                                        This evening we take a walk through the cobblestone town of Ragusa Ibla, always a tour highlight. Ragusa Ibla hosts a wide array of Baroque architecture including palaces and churches. We enjoy a special dinner at one of the locals’ favourite trattoria. .
-                                    </p>
-                
-                                    <div class="italic">
-                                        Inclusions: breakfast, lunch & dinner
-                                    </div><br>
-                
-                                    <img src="images/Sicily_map_route+2.png" alt="" style="margin-bottom:20px;">
-                
-                                    <h2>
-                                        SUNDAY 10 JUNE – SCOGLITTI
-                                    </h2>
-                
-                                    <p>
-                                        Today is all about family. We enjoy a traditional Sicilian Sunday lunch feast at Carmel’s aunt’s home, where food and wine will be aplenty. We try the famous traditional Sicilian digestif Averna, which comes from nearby Caltanisetta.
-                                    </p>
-                
-                                    <p>
-                                        Before lunch, Zia Maria and cousin Carmel will demonstrate how they make Sunday sugo, fresh pasta, caponata, Ragusani scacce (folded pizza) and sfingi, a type of Sicilian donut. Time to roll up our sleeves, join in and have some fun cooking.
-                                    </p>
-                
-                                    <p>
-                                        Afterwards we enjoy a stroll, “the passeggiata” with the locals. Free time in the evening for more strolls and/or a visit to a pizzeria, restaurant or gelato bar at your leisure.
-                                    </p>
-                
-                                    <div class="italic">
-                                        Inclusions: breakfast & lunch
-                                    </div><br>
-                
-                                    <h2>
-                                        MONDAY 11 JUNE – SIRACUSA AND NOTO
-                                    </h2>
-                
-                                    <p>
-                                        This morning we head to the fish markets in Ortigia on the East coast of Sicily. This is followed by a stroll through the beautiful Ortigia, a small island which is the historical centre of the city of Syracuse. The island, also known as Città Vecchia, contains many historical landmarks including the spectacular Duomo di Siracusa. We wander through the narrow medieval lanes and head to lunch at one of Ortigia’s famous trattorias.
-                                    </p>
-                
-                                    <p>
-                                        We spend the afternoon at the UNESCO heritage town of Noto, one of Sicily’s most beautiful towns, flanked by grandeur baroque palazzi and churches. We visit the famous Caffe Sicilia, home of Sicily’s most famous pastry chef, Corrado Assenza.
-                                    </p>
-                
-                                    <p>
-                                        Tonight it’s pizza night.
-                                    </p>
-                
-                                    <div class="italic">
-                                        Inclusions: breakfast, lunch & dinner
-                                    </div><br>
-                
-                                    <h2>
-                                        TUESDAY 12 JUNE – AGRIGENTO
-                                    </h2>
-                
-                                    <p>
-                                        This morning we make our way to the region of Agrigento, stopping on the way at Baglio del Cristo di Campobello winery for a tasting. Campobello is one of Sicily’s biggest wine exporters to Australia.
-                                    </p>
-                
-                                    <p>
-                                        Today is Carmel’s birthday, so it’s only fitting that we celebrate it in style with a long lunch at one of her favourite spots on the south west coast of Sicily, Lido Canaima located in Montallegro. Carmel’s dear friend Chef Leonardo will prepare an amazing lunch with an endless supply of Aperol Spritz.
-                                    </p>
-                
-                                    <p>
-                                        Late this afternoon we head to the Valley of the Temples to explore one of Sicily’s most famous historical attractions and a UNESCO World Heritage Site consisting of eight temples built between about 510 BC and 430 BC. This archaeological park and landscape is the largest archaeological site in the world with 1,300 hectares.
-                                    </p>
-                
-                                    <p>
-                                        We make our way back to Scoglitti in the early evening.
-                                    </p>
-                
-                                    <div class="italic">
-                                        Inclusions: breakfast & lunch
-                                    </div><br>
-                
-                                    <h2>
-                                        WEDNESDAY 13 JUNE – SCOGLITTI
-                                    </h2>
-                
-                                    <p>
-                                        We head to the local pasticerria in town for a traditional Sicilian breakfast, granita with brioche. Here pastry Chef Stefania demonstrates how to make ricotta cannoli.
-                                    </p>
-                
-                                    <p>
-                                        Then we are off to the local ricotta farm to see how Sicily’s favourite cheese is made, like only the Ragusani know how to make it. Here we sample the most delicious ricotta at various maturity levels.
-                                    </p>
-                
-                                    <p>
-                                        We then visit an eggplant and tomato farm where tomatoes have been cultivated for decades. Ragusa is perfect for the tomato farms with its arrid, sandy, flat land. We take a walk through the “serre”, tomato houses and then enjoy a delicious rustic BBQ lunch featuring tomatoes of course and delicious pork and fennel Sicilian sausages.
-                                    </p>
-                
-                                    <p>
-                                        Tonight we have our farewell dinner.
-                                    </p>
-                
-                                    <div class="italic">
-                                        Inclusions: breakfast, lunch & dinner
-                                    </div><br>
-                
-                                    <h2>
-                                        THURSDAY 14 JUNE – SCOGLITTI TO CATANIA
-                                    </h2>
-                
-                                    <p>
-                                        Breakfast at hotel. Our Sicilian Food Tour concludes. Shuttle will depart at 9am for Catania Airport from the Scoglitti hotel.
-                                    </p>
-                
-                                    <div class="italic">
-                                        Inclusions: breakfast
-                                    </div><br>
-                
-                
-                
-                
-                                    <hr class="cus-hr">
-                
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <h2>7 DAYS & 6 NIGHTS</h2>
+                                <div class="col-sm-pull-6 col-md-6 col-sm-6">
+                                    <div class="pal-l">
+                                        <h1>Join restaurateur Carmel Ruggeri as she takes you through her part of the world, her island, Sicilia.</h1>
+                                        <p>Immerse yourself in Sicilian food and culture through Carmel’s eyes and that of her Sicilian family.
                                             <div class="italic">
-                                                Style: Classic relaxed fun and food
-                                            </div> <br>
-                                            <p>Included in price:</p>
-                                            <ul>
-                                                <li>6 nights in standard hotels</li>
-                                                <li>Private vehicle with a professional driver</li>
-                                                <li>9 x main meals (lunch/dinner) per person</li>
-                                                <li>All activities specified in the itinerary, including entry fees and local guides where appropriate.</li>
-                                                <li>Personal services of restaurateur Carmel Ruggeri, a bilingual Italo Australian whose heart lives in Sicily.</li>
-                                            </ul>
-                                            <p>To book please email <br> <span>info@sicilianfoodtours.com</span> or complete our online form:</p>
-                                            <div class="pal-bt" style="margin-bottom:50px;">
-                                                <button type="button" class="btn btn-danger">BOOK ONLINE</button>
+                                                "Sharing pure and simple local food and immersing them in the true rustic charm of my Sicily. The cannoli, the cheese, the tomatoes… simple produce you will never ever forget." "My family will open their homes to you and share the warmth and feasts that
+                                                I experience every time I visit." "There is so much to do and see on this picturesque island," says Carmel. "I’m offering you a taste of Sicily’s great food and inevitably pure enjoyment. The Sicilians are
+                                                warm people and I promise, you will leave your heart there just as I have so many times before."
                                             </div>
-                                        </div>
-                
-                                        <div class="col-md-6 col-sm-6 food3">
-                                            <img src="images/food4.jpg" alt="">
-                                            <h1> <span>Book now</span> <strong>– $4,000 AUD per person</strong> twin share, taxes included. Conditions apply.</h1>
-                                        </div>
-                                        <hr class="cus-hr">
-                
-                                        <div id="sync1" class="owl-carousel owl-theme">
-                                            <div class="item" style="background:url('images/Sicily16_345.jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_353.jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_358.jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_361.jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_380.jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_619.jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_1030.jpg');"></div>
-                                        </div>
-            
-                                        <div id="sync2" class="owl-carousel owl-theme">
-                                            <div class="item" style="background:url('images/Sicily16_345(1).jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_353(1).jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_358(1).jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_361(1).jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_380(1).jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_619(1).jpg');"></div>
-                                            <div class="item" style="background:url('images/Sicily16_1030(1).jpg');"></div>
-                                        </div>
-            
-                                        <p>
-                                            Photography by Gina Milicia 2016 <br> Brochure: Tinka Marketing & Events
                                         </p>
                                     </div>
-                
-                
-                                    </div><!-- pal-content -->
                                 </div>
-                            </div><!-- end row -->
-                    </div> <!-- end palermo  -->
-                
-                <!--main-content-->
-        
+
+                            </div>
+                            <p>
+                                Share a once-in-a-lifetime experience on the beautiful island of Sicily, where the mountains meet the sea and family and food are its heart and soul.
+                                <br><br> This tour commences in the undiscovered south coast of Sicily, at the small fishing village of Scoglitti, and explores the beautiful attractions of Siracusa, Noto and Agrigento.
+
+                            </p>
+                            <div class="pal-bt text-center">
+                                <a href="#" class="btn big-btn">DOWNLOAD BROCHURE</a><br>
+                                <a href="#" class="btn big-btn">BOOK NOW</a>
+                            </div>
+                            <hr class="cus-hr">
+
+                            <div class="owl-carousel owl-theme slider-1">
+                                <div class="item">
+                                    <img src="images/gallery/pal-slid-1.jpeg" />
+                                </div>
+                                <div class="item ">
+                                    <img src="images/gallery/pal-slid-2.JPG" />
+                                </div>
+                                <div class="item ">
+                                    <img src="images/gallery/pal-slid-3.jpg" />
+                                </div>
+                                <div class="item ">
+                                    <img src="images/gallery/pal-slid-4.jpg" />
+                                </div>
+                                <div id="galleryitem_5 " class="item ">
+                                    <img src="images/gallery/pal-slid-5.jpg" />
+                                </div>
+
+                            </div>
+
+                            <h1>Itinerary</h1>
+                            <h2>FRIDAY 8 JUNE – CATANIA TO SCOGLITTI</h2>
+                            <p>
+                                We meet at Catania Airport for a bus trip to the undiscovered south coast of Sicily to the small fishing village of Scoglitti overlooking the Mediterranean Sea. Here we settle into our beachfront hotel for lunch on the beach where we sample the first
+                                of our many Sicilian delights prepared by cousin Carmel, who also gives us our first cooking class.
+                            </p>
+
+                            <p>
+                                Carmel will then take us on an afternoon walk around the town, our home for the next seven days, including a stopover at the fish markets. We will of course stop for our first gelato at Carmel’s cousin Franco’s bar.
+                            </p>
+
+                            <p>
+                                In the evening, dinner at one of Scoglitti’s best restaurants for a 15 course degustation.
+                            </p>
+
+                            <div class="italic">
+                                Inclusions: lunch & dinner
+                            </div><br>
+
+                            <h2>
+                                SATURDAY 9 JUNE – MODICA, VALLE DELL’ACATE WINERY AND RAGUSA IBLA
+                            </h2>
+
+                            <p>
+                                We spend the morning discovering the beautiful Baroque Valley of Ragusa, Modica. Here we visit Antica Dolceria Bonajuto, the oldest chocolate factory in Sicily founded in 1880.
+                                <div class="p-italic">The New York Times called it “...chocolate of astonishingly pure, powerful flavor.”</div>
+                            </p>
+
+                            <p>
+                                We then visit the Valle dell’Acate winery run by the Jacono family where our host Giovanni Carbone takes us through the original 19th century palmento for a tasting of Frappato, Nero D’avola and Cerasuolo, Sicily’s only DOCG wine, this is followed by
+                                a light rustic Sicilian lunch.
+                            </p>
+
+                            <p>
+                                This evening we take a walk through the cobblestone town of Ragusa Ibla, always a tour highlight. Ragusa Ibla hosts a wide array of Baroque architecture including palaces and churches. We enjoy a special dinner at one of the locals’ favourite trattoria.
+                                .
+                            </p>
+
+                            <div class="italic">
+                                Inclusions: breakfast, lunch & dinner
+                            </div><br>
+
+                            <img src="images/Sicily_map_route+2.png" alt="" style="margin-bottom:20px;">
+
+                            <h2>
+                                SUNDAY 10 JUNE – SCOGLITTI
+                            </h2>
+
+                            <p>
+                                Today is all about family. We enjoy a traditional Sicilian Sunday lunch feast at Carmel’s aunt’s home, where food and wine will be aplenty. We try the famous traditional Sicilian digestif Averna, which comes from nearby Caltanisetta.
+                            </p>
+
+                            <p>
+                                Before lunch, Zia Maria and cousin Carmel will demonstrate how they make Sunday sugo, fresh pasta, caponata, Ragusani scacce (folded pizza) and sfingi, a type of Sicilian donut. Time to roll up our sleeves, join in and have some fun cooking.
+                            </p>
+
+                            <p>
+                                Afterwards we enjoy a stroll, “the passeggiata” with the locals. Free time in the evening for more strolls and/or a visit to a pizzeria, restaurant or gelato bar at your leisure.
+                            </p>
+
+                            <div class="italic">
+                                Inclusions: breakfast & lunch
+                            </div><br>
+
+                            <h2>
+                                MONDAY 11 JUNE – SIRACUSA AND NOTO
+                            </h2>
+
+                            <p>
+                                This morning we head to the fish markets in Ortigia on the East coast of Sicily. This is followed by a stroll through the beautiful Ortigia, a small island which is the historical centre of the city of Syracuse. The island, also known as Città Vecchia,
+                                contains many historical landmarks including the spectacular Duomo di Siracusa. We wander through the narrow medieval lanes and head to lunch at one of Ortigia’s famous trattorias.
+                            </p>
+
+                            <p>
+                                We spend the afternoon at the UNESCO heritage town of Noto, one of Sicily’s most beautiful towns, flanked by grandeur baroque palazzi and churches. We visit the famous Caffe Sicilia, home of Sicily’s most famous pastry chef, Corrado Assenza.
+                            </p>
+
+                            <p>
+                                Tonight it’s pizza night.
+                            </p>
+
+                            <div class="italic">
+                                Inclusions: breakfast, lunch & dinner
+                            </div><br>
+
+                            <h2>
+                                TUESDAY 12 JUNE – AGRIGENTO
+                            </h2>
+
+                            <p>
+                                This morning we make our way to the region of Agrigento, stopping on the way at Baglio del Cristo di Campobello winery for a tasting. Campobello is one of Sicily’s biggest wine exporters to Australia.
+                            </p>
+
+                            <p>
+                                Today is Carmel’s birthday, so it’s only fitting that we celebrate it in style with a long lunch at one of her favourite spots on the south west coast of Sicily, Lido Canaima located in Montallegro. Carmel’s dear friend Chef Leonardo will prepare an amazing
+                                lunch with an endless supply of Aperol Spritz.
+                            </p>
+
+                            <p>
+                                Late this afternoon we head to the Valley of the Temples to explore one of Sicily’s most famous historical attractions and a UNESCO World Heritage Site consisting of eight temples built between about 510 BC and 430 BC. This archaeological park and landscape
+                                is the largest archaeological site in the world with 1,300 hectares.
+                            </p>
+
+                            <p>
+                                We make our way back to Scoglitti in the early evening.
+                            </p>
+
+                            <div class="italic">
+                                Inclusions: breakfast & lunch
+                            </div><br>
+
+                            <h2>
+                                WEDNESDAY 13 JUNE – SCOGLITTI
+                            </h2>
+
+                            <p>
+                                We head to the local pasticerria in town for a traditional Sicilian breakfast, granita with brioche. Here pastry Chef Stefania demonstrates how to make ricotta cannoli.
+                            </p>
+
+                            <p>
+                                Then we are off to the local ricotta farm to see how Sicily’s favourite cheese is made, like only the Ragusani know how to make it. Here we sample the most delicious ricotta at various maturity levels.
+                            </p>
+
+                            <p>
+                                We then visit an eggplant and tomato farm where tomatoes have been cultivated for decades. Ragusa is perfect for the tomato farms with its arrid, sandy, flat land. We take a walk through the “serre”, tomato houses and then enjoy a delicious rustic BBQ
+                                lunch featuring tomatoes of course and delicious pork and fennel Sicilian sausages.
+                            </p>
+
+                            <p>
+                                Tonight we have our farewell dinner.
+                            </p>
+
+                            <div class="italic">
+                                Inclusions: breakfast, lunch & dinner
+                            </div><br>
+
+                            <h2>
+                                THURSDAY 14 JUNE – SCOGLITTI TO CATANIA
+                            </h2>
+
+                            <p>
+                                Breakfast at hotel. Our Sicilian Food Tour concludes. Shuttle will depart at 9am for Catania Airport from the Scoglitti hotel.
+                            </p>
+
+                            <div class="italic">
+                                Inclusions: breakfast
+                            </div><br>
+
+
+
+
+                            <hr class="cus-hr">
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <h2>7 DAYS & 6 NIGHTS</h2>
+                                    <div class="italic">
+                                        Style: Classic relaxed fun and food
+                                    </div> <br>
+                                    <p>Included in price:</p>
+                                    <ul>
+                                        <li>6 nights in standard hotels</li>
+                                        <li>Private vehicle with a professional driver</li>
+                                        <li>9 x main meals (lunch/dinner) per person</li>
+                                        <li>All activities specified in the itinerary, including entry fees and local guides where appropriate.</li>
+                                        <li>Personal services of restaurateur Carmel Ruggeri, a bilingual Italo Australian whose heart lives in Sicily.</li>
+                                    </ul>
+                                    <p>To book please email <br> <span>info@sicilianfoodtours.com</span> or complete our online form:</p>
+                                    <div class="pal-bt">
+                                        <a href="#" class="big-btn btn ">BOOK NOW</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 food3">
+                                    <img src="images/food4.jpg" alt="">
+                                    <h1> <span>Book now</span> <strong>– $4,000 AUD per person</strong> twin share, taxes included. Conditions apply.</h1>
+                                </div>
+                                <hr class="cus-hr">
+
+                                <div id="sync1" class="owl-carousel owl-theme">
+                                    <div class="item" style="background:url('images/gallery/thumbmain-1.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-2.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-3.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-4.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-5.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-6.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-7.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-8.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-9.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-10.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-11.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-12.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-13.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-14.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-15.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-16.jpg');"></div>
+
+                                </div>
+
+                                <div id="sync2" class="owl-carousel owl-theme">
+                                    <div class="item" style="background:url('images/gallery/thumbmain-1.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-2.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-3.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-4.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-5.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-6.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-7.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-8.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-9.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-10.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-11.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-12.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-13.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-14.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-15.jpg');"></div>
+                                    <div class="item" style="background:url('images/gallery/thumbmain-16.jpg');"></div>
+                                </div>
+
+                                <p>
+                                    Photography by Gina Milicia 2016 <br> Brochure: Tinka Marketing & Events
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <!-- pal-content -->
+                    </div>
+                </div>
+                <!-- end row -->
             </div>
-        
-            <!--End page content wrapper-->
-        
-        
+            <!-- end palermo  -->
+
+            <!--main-content-->
+
+        </div>
+
+        <!--End page content wrapper-->
+
+
     </div>
-            <!--End header, Body content-->
-
-    
-   
+    <!--End header, Body content-->
 
 
-<div class="mini-footer">
-    <i class="fa fa-facebook"></i>
-</div>
 
-<footer>
-    <p class="text-center"><a href="#">Contact Carmel</a>
-    &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
-</footer>
 
-<script src="js/jquery-1.11.3.min.js "></script>
-<script src="js/bootstrap.min.js "></script>
-<script src="js/myscript.js "></script>
-<script src="js/owl.carousel.js "></script>
+
+    <div class="mini-footer">
+        <i class="fa fa-facebook"></i>
+    </div>
+
+    <footer>
+        <p class="text-center"><a href="#">Contact Carmel</a> &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/myscript.js "></script>
+    <script src="js/owl.carousel.js "></script>
+    <script src="js/mansory.js "></script>
 
 </body>
 

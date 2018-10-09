@@ -2,309 +2,357 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>FQS</title>
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FQS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <Style>
+        .left-side .faq_nav {
+            color: #000 !important;
+        }
+        
+        nav .faq_nav {
+            color: #fff !important;
+        }
+        
+        .tour_nav {
+            color: #fff !important;
+        }
+    </Style>
+
+
 </head>
 
 <body>
-<div id="wrapper">
-                <div class="overlay"></div>
-                
-                
-                <!-- Sidebar -->
+    <div id="wrapper">
+        <div class="overlay"></div>
+
+
+        <!-- Sidebar -->
         <nav class=" navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-                <ul class="nav sidebar-nav">
-    
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-    
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR TOURS <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="Palermo.html">Palermo, Messina regions</a></li>
-                            <li><a href="ragusa.html">Ragusa region</a></li>
-                            <li><a href="FQS.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
-            
-                            <ul class="dropdown-menu" role="menu">
-    
-                                <li><a href="testimonial.html">TESTIMONIALS</a></li>
-                                <li><a href="photos 2017.html">PHOTOS 2017</a></li>
-                                <li><a href="#">PHOTOS 2016</a></li>
-                                <li><a href="#">PHOTOS 2015</a></li>
-                                <li><a href="conatct.html">CONTACT</a></li>
-                        </ul>
-    
-                    </li>
-                </ul>
-            </nav>
-            <!-- /#sidebar-wrapper -->
-                
-                
-                <div id="page-content-wrapper">
-                        <!--right side menu button-->
-                        <button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
+            <ul class="nav sidebar-nav">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle tour_nav" data-toggle="dropdown">OUR TOURS <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="Palermo.html" class="pal_nav">Palermo, Messina regions</a></li>
+                        <li><a href="ragusa.html" class="rag_nav">Ragusa region</a></li>
+                        <li><a href="FQS.html" class="faq_nav">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle about_nav" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="testimonial.html" class="test_nav">TESTIMONIALS</a></li>
+                        <li><a href="photos 2017.html" class="p215">PHOTOS 2017</a></li>
+                        <li><a href="photos 2016.html" class="p215">PHOTOS 2016</a></li>
+                        <li><a href="photos 2015.html" class="p215">PHOTOS 2015</a></li>
+                        <li><a href="conatct.html" class="con_nav">CONTACT</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+
+        <div id="page-content-wrapper">
+            <!--right side menu button-->
+            <button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
                                 <span class="hamb-top"></span>
                                         <span class="hamb-middle"></span>
                                                 <span class="hamb-bottom"></span>
                         </button>
-                
-                        <!--Header-->
-                        <header>
 
-                                <nav class="navbar navbar-default tembus-fqs">
-                                        <div class="container-fliud">
-                                        <div class="navbar-header">
-                                                <a class="navbar-brand" href="#"><img src="images/download.png" class="img-responsive" alt=""></a>
+            <!--Header-->
+            <header>
+
+                <nav class="navbar navbar-default tembus-fqs">
+                    <div class="container-fliud">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html"><img src="images/download.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropbtn tour_nav">OUR TOURS</a>
+                                        <div class="dropdown-content">
+                                            <a href="Palermo.html" class="pal_nav">PALERMO, MESSINA REGIONS</a>
+                                            <a href="ragusa.html" class="rag_nav">RAGUSA REGION </a>
+                                            <a href="FQS.html" class="faq_nav">FAQ</a>
                                         </div>
-                                        <div class="collapse navbar-collapse" id="myNavbar">
-                                                <ul class="nav navbar-nav navbar-right">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li>
-                                                        <div class="dropdown">
-                                                        <button class="dropbtn">OUR TOURS</button>
-                                                        <div class="dropdown-content">
-                                                                <a href="Palermo.html">Palermo, Messina regions</a>
-                                                                <a href="ragusa.html">Ragusa region</a>
-                                                                <a href="FQS.html">FAQ</a>
-                                                        </div>
-                                                        </div>
-                                                </li>
-                                                <li>
-                                                <div class="dropdown">
-                                                        <button class="dropbtn">ABOUT</button>
-                                                        <div class="dropdown-content">
-                                                        <a href="testimonial.html">TESTIMONIALS</a>
-                                                        <a href="photos 2017.html">PHOTOS 2017</a>
-                                                        <a href="Palermo.html">PHOTOS 2016</a>
-                                                        <a href="Palermo.html">PHOTOS 2015</a>
-                                                        <a href="conatct.html">CONTACT</a>
-                                                        </div>
-                                                </div>
-                                                </li>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropbtn about_nav">ABOUT</a>
+                                        <div class="dropdown-content">
+                                            <a href="testimonial.html" class="test_nav">TESTIMONIALS</a>
+                                            <a href="photos 2017.html" class="p217">PHOTOS 2017</a>
+                                            <a href="photos 2016.html" class="p216">PHOTOS 2016</a>
+                                            <a href="photos 2015.html" class="p215">PHOTOS 2015</a>
+                                            <a href="conatct.html" class="con_nav">CONTACT</a>
                                         </div>
-                                        </div>
-                                </nav>
-                        
-                                </header>
-                        
-                                <div class="main-page clearfix">
-                                        <div class="row">
-                                        <div class="col-md-3 col-sm-3 .d-sm-none .d-md-block">
-                                                <div class="left-side">
-                                                <h2>Our tours</h2>
-                                                <h4>PALERMO, MESSINA <br> REGIONS</h4>
-                                                <h4>RAGUSA REGION </h4>
-                                                <h3>FAQ</h3>
-                                                </div>
-                                        </div>
-                                        <div class="col-md-9 col-sm-9">
-                                                <div class="pal-content">
-                                                <h1>FAQ</h1>
-                                                <p>
-                                                        Here’s a list of the frequently asked questions we get.
-                                                </p>
-                                                <h1>How do I get to Sicily?</h1>
-                                                <h2>
-                                                        1. Fly to Catania or Palermo Airport in Sicily
-                                                </h2>
-                                                
-                                                <ul>
-                                                        <li>No direct flights from Australia but plenty of connections from Rome.</li>
-                                                        <li>Flight is 90 mins.</li>
-                                                        <li>Etihad is affiliated with Alitalia therefore tends to be the most popular for our Australian clients. Our clients from the USA can get a flight from Newark on the East Coast direct to Palermo with Meridiana Airlines.</li>
-                                                </ul>
-                        
-                                                <p>OR</p>
-                        
-                                                <h2>
-                                                        2. Ferry from Naples
-                                                </h2>
-                        
-                                                <ul>
-                                                        <li>You can book a large ferry from Naples harbour that will take you to Catania or Palermo.</li>
-                                                        <li>Allow approx.  8-9 hours.</li>
-                                                </ul>
-                        
-                                                <p>
-                                                        Need help? We can help you plan your trip and guide you on what to do before and after your tour.
-                                                </p>
-                        
-                                                <h1>
-                                                        What do I pack?
-                                                </h1>
-                        
-                                                <h2>
-                                                        Walking shoes
-                                                </h2>
-                        
-                                                <p>
-                                                        There's plenty of walking done on our tours, so make sure you're comfortable and ready to walk on sometimes uneven cobblestones.
-                                                </p>
-                        
-                                                <h2>
-                                                        Casual clothes
-                                                </h2>
-                        
-                                                <p>
-                                                        We're a casual bunch on tour most of the time so dress for comfort and activities. Cooking, walking, touring and eating! Suggest you bring a light jacket for cooler evenings.
-                                                </p>
-                        
-                                                <h2>
-                                                        Smart casual outfit
-                                                </h2>
-                        
-                                                <p>
-                                                        There are a few special dining venues during the tour you may want to dress up for (but not over the top). Jeans are still acceptable.
-                                                </p>
-                        
-                                                <h2>
-                                                        Adaptor
-                                                </h2>
-                        
-                                                <p>
-                                                        Australian plugs will need an adaptor to fit Italy's power sockets, so make sure you bring one with you to charge your electronics. (Phone/Camera/iPads)
-                                                </p>
-                        
-                                                <h1>
-                                                        Do I need travel insurance?
-                                                </h1>
-                        
-                                                <p>
-                                                        We recommend taking out basic travel insurance so you're covered for things like;
-                                                </p>
-                        
-                                                <ol>
-                                                        <li>Travel delays and cancellations</li>
-                                                        <li>Lost Luggage</li>
-                                                        <li>Car accidents</li>
-                                                        <li>Theft</li>
-                                                        <li>Medical (but remember pre-existing conditions are rarely covered in a base policy).</li>
-                                                </ol>
-                        
-                                                <p>
-                                                        Tip: If you're planning to buy travel insurance it's better to buy it the moment you have locked in flights or tours as you'll be covered from the date you take out your policy as well as the dates you're travelling.
-                                                </p>
-                        
-                                                <h1>
-                                                        Do I need to speak Italian?
-                                                </h1>
-                        
-                                                <p>No, that's one of the benefits of booking with me.</p>
-                                                <p>I take care of everything for you so you can relax and enjoy your holiday.</p>
-                                                <p>I do all of the talking, organising and dealings with local hotels, transport and tour partners.</p>
-                                                <p>All you need to do is turn up.</p>
-                                                <p>However, like any place you travel to, the locals do appreciate it when you master some basics.</p>
-                        
-                                                <h1>How many people on the tour?</h1>
-                        
-                                                <p>We like to keep our tours authentic, and the only way to do that is to keep it small.</p>
-                        
-                                                <p>Most tours have a maximum of 15 people.</p>
-                        
-                                                <h1>Are private tours available?</h1>
-                        
-                                                <p>We also offer premium, private tours for groups of four or more if that's more your style.</p>
-                        
-                                                <p>Simply contact Carmel: <span>info@sicilianfoodtours.com</span></p>
-                        
-                                                <h1>Do I get any free time?</h1>
-                        
-                                                <p>Yes!</p>
-                        
-                                                <p>
-                                                        2 – 3 hours per day where you can explore at your leisure or simply relax.
-                                                </p>
-                        
-                                                <p>
-                                                        It's up to you.
-                                                </p>
-                        
-                                                <h1>
-                                                        How much spending money do I need?
-                                                </h1>
-                        
-                                                <p>
-                                                        It's totally up to how much you spend!  Right?
-                                                </p>
-                        
-                                                <p>
-                                                        While on tour, the majority of your food, drinks and activities are paid for.
-                                                </p>
-                        
-                                                <p>
-                                                        So it comes down to how much you're likely to shop, or spend on activities during your spare time.  We have had guest that have only spent 50 euro on the tour and that’s to buy a souvenir or a drink because they’ve decided to opt out of our prearranged activities.
-                                                </p>
-                        
-                                                <h1>
-                                                        Do I pay a solo supplement if I go on my own?
-                                                </h1>
-                        
-                                                <p>
-                                                        Nope!  We don’t believe people should be penalised for travelling by themselves.
-                                                </p>
-                        
-                                                <p>
-                                                        So, if you’re a solo traveller you’ll have your own room to relax in after your day exploring the Sicilian countryside.
-                                                </p>
-                        
-                                                <h1>
-                                                        We’re here to help
-                                                </h1>
-                        
-                                                <p>Shout out if you have any other questions. <br> <span>info@sicilianfoodtours.com</span></p>
-                        
-                                                <p>
-                                                        Ready to book?
-                                                </p>
-                        
-                                                <div class="pal-bt" style="margin-bottom:50px;">
-                                                        <button type="button" class="btn btn-danger">RESERVE YOUR PLACE ONLINE</button>
-                                                </div>
-                                                
-                                                </div>
-                                        </div>
-                                        </div><!-- end row -->
-                                </div> <!-- end palermo  -->                            
-                
-                        <!--main-content-->
-                
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </header>
+
+            <div class="main-page clearfix">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 visible-xs">
+                        <div class="left-side">
+                            <nav class="navbar navbar-fixed-right navbar-minimal animate" role="navigation">
+                                <div class="navbar-toggler animate">
+                                    <span class="menu-icon"></span>
+                                </div>
+                                <ul class="navbar-menu animate">
+                                    <li>
+                                        <a href="#about-us" class="animate">
+                                            <span class="desc animate"> <h2>Our tours</h2> </span>
+                                            <span class="glyphicon glyphicon-user"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#blog" class="animate">
+                                            <span class="desc animate"> <h3> PALERMO, MESSINA <br> REGIONS</h3> </span>
+                                            <span class="glyphicon glyphicon-info-sign"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact-us" class="animate">
+                                            <span class="desc animate"> <h4>RAGUSA REGION <br> FAQ</h4> </span>
+                                            <span class="glyphicon glyphicon-comment"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 hidden-xs">
+                        <div class="left-side">
+                            <h2>Our tours</h2>
+                            <a href="Palermo.html" class="pal_nav">PALERMO, MESSINA REGIONS<a>
+                            <a href="ragusa.html"  class="rag_nav">RAGUSA REGION </a>
+                            <a href="FQS.html" class="faq_nav">FAQ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8">
+                        <div class="pal-content">
+                            <h1>FAQ</h1>
+                            <p>
+                                Here’s a list of the frequently asked questions we get.
+                            </p>
+                            <h1>How do I get to Sicily?</h1>
+                            <h2>
+                                1. Fly to Catania or Palermo Airport in Sicily
+                            </h2>
+
+                            <ul>
+                                <li>No direct flights from Australia but plenty of connections from Rome.</li>
+                                <li>Flight is 90 mins.</li>
+                                <li>Etihad is affiliated with Alitalia therefore tends to be the most popular for our Australian clients. Our clients from the USA can get a flight from Newark on the East Coast direct to Palermo with Meridiana Airlines.</li>
+                            </ul>
+
+                            <p>OR</p>
+
+                            <h2>
+                                2. Ferry from Naples
+                            </h2>
+
+                            <ul>
+                                <li>You can book a large ferry from Naples harbour that will take you to Catania or Palermo.</li>
+                                <li>Allow approx. 8-9 hours.</li>
+                            </ul>
+
+                            <p>
+                                Need help? We can help you plan your trip and guide you on what to do before and after your tour.
+                            </p>
+
+                            <h1>
+                                What do I pack?
+                            </h1>
+
+                            <h2>
+                                Walking shoes
+                            </h2>
+
+                            <p>
+                                There's plenty of walking done on our tours, so make sure you're comfortable and ready to walk on sometimes uneven cobblestones.
+                            </p>
+
+                            <h2>
+                                Casual clothes
+                            </h2>
+
+                            <p>
+                                We're a casual bunch on tour most of the time so dress for comfort and activities. Cooking, walking, touring and eating! Suggest you bring a light jacket for cooler evenings.
+                            </p>
+
+                            <h2>
+                                Smart casual outfit
+                            </h2>
+
+                            <p>
+                                There are a few special dining venues during the tour you may want to dress up for (but not over the top). Jeans are still acceptable.
+                            </p>
+
+                            <h2>
+                                Adaptor
+                            </h2>
+
+                            <p>
+                                Australian plugs will need an adaptor to fit Italy's power sockets, so make sure you bring one with you to charge your electronics. (Phone/Camera/iPads)
+                            </p>
+
+                            <h1>
+                                Do I need travel insurance?
+                            </h1>
+
+                            <p>
+                                We recommend taking out basic travel insurance so you're covered for things like;
+                            </p>
+
+                            <ol>
+                                <li>Travel delays and cancellations</li>
+                                <li>Lost Luggage</li>
+                                <li>Car accidents</li>
+                                <li>Theft</li>
+                                <li>Medical (but remember pre-existing conditions are rarely covered in a base policy).</li>
+                            </ol>
+
+                            <p>
+                                Tip: If you're planning to buy travel insurance it's better to buy it the moment you have locked in flights or tours as you'll be covered from the date you take out your policy as well as the dates you're travelling.
+                            </p>
+
+                            <h1>
+                                Do I need to speak Italian?
+                            </h1>
+
+                            <p>No, that's one of the benefits of booking with me.</p>
+                            <p>I take care of everything for you so you can relax and enjoy your holiday.</p>
+                            <p>I do all of the talking, organising and dealings with local hotels, transport and tour partners.</p>
+                            <p>All you need to do is turn up.</p>
+                            <p>However, like any place you travel to, the locals do appreciate it when you master some basics.</p>
+
+                            <h1>How many people on the tour?</h1>
+
+                            <p>We like to keep our tours authentic, and the only way to do that is to keep it small.</p>
+
+                            <p>Most tours have a maximum of 15 people.</p>
+
+                            <h1>Are private tours available?</h1>
+
+                            <p>We also offer premium, private tours for groups of four or more if that's more your style.</p>
+
+                            <p>Simply contact Carmel: <span>info@sicilianfoodtours.com</span></p>
+
+                            <h1>Do I get any free time?</h1>
+
+                            <p>Yes!</p>
+
+                            <p>
+                                2 – 3 hours per day where you can explore at your leisure or simply relax.
+                            </p>
+
+                            <p>
+                                It's up to you.
+                            </p>
+
+                            <h1>
+                                How much spending money do I need?
+                            </h1>
+
+                            <p>
+                                It's totally up to how much you spend! Right?
+                            </p>
+
+                            <p>
+                                While on tour, the majority of your food, drinks and activities are paid for.
+                            </p>
+
+                            <p>
+                                So it comes down to how much you're likely to shop, or spend on activities during your spare time. We have had guest that have only spent 50 euro on the tour and that’s to buy a souvenir or a drink because they’ve decided to opt out of our prearranged
+                                activities.
+                            </p>
+
+                            <h1>
+                                Do I pay a solo supplement if I go on my own?
+                            </h1>
+
+                            <p>
+                                Nope! We don’t believe people should be penalised for travelling by themselves.
+                            </p>
+
+                            <p>
+                                So, if you’re a solo traveller you’ll have your own room to relax in after your day exploring the Sicilian countryside.
+                            </p>
+
+                            <h1>
+                                We’re here to help
+                            </h1>
+
+                            <p>Shout out if you have any other questions. <br> <span>info@sicilianfoodtours.com</span></p>
+
+                            <p>
+                                Ready to book?
+                            </p>
+
+                            <div class="pal-bt">
+                                <a href="#" class="btn btn-danger">RESERVE YOUR PLACE ONLINE</a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                
-                <!--End page content wrapper-->
-                
-                
-</div>
-<!--End header, Body content-->
-    
+                <!-- end row -->
+            </div>
+            <!-- end palermo  -->
+
+            <!--main-content-->
+
+        </div>
+
+        <!--End page content wrapper-->
+
+
+    </div>
+    <!--End header, Body content-->
 
 
 
-<div class="mini-footer">
-    <i class="fa fa-facebook"></i>
-</div>
 
-<footer>
-    <p class="text-center"><a href="#">Contact Carmel</a>
-    &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
-</footer>
+    <div class="mini-footer">
+        <i class="fa fa-facebook"></i>
+    </div>
 
-<script src="js/jquery-1.11.3.min.js "></script>
+    <footer>
+        <p class="text-center"><a href="#">Contact Carmel</a> &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="js/myscript.js "></script>
     <script src="js/owl.carousel.js "></script>
+    <script src="js/mansory.js "></script>
 
 </body>
 

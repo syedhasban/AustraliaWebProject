@@ -2,241 +2,290 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Testimonial</title>
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testimonial</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <Style>
+        .left-side .test_nav {
+            color: #000 !important;
+        }
+        
+        nav .test_nav {
+            color: #fff !important;
+        }
+        
+        .about_nav {
+            color: #fff !important;
+        }
+    </Style>
 </head>
 
 <body>
-<div id="wrapper">
+    <div id="wrapper">
         <div class="overlay"></div>
-        
-        
-       <!-- Sidebar -->
-       <nav class=" navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
 
-            <li>
-                <a href="index.html">Home</a>
-            </li>
 
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR TOURS <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="Palermo.html">Palermo, Messina regions</a></li>
-                    <li><a href="ragusa.html">Ragusa region</a></li>
-                    <li><a href="FQS.html">FAQ</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
+        <!-- Sidebar mobile -->
+        <nav class=" navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
 
-                <ul class="dropdown-menu" role="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-                    <li><a href="testimonial.html">TESTIMONIALS</a></li>
-                    <li><a href="photos 2017.html">PHOTOS 2017</a></li>
-                    <li><a href="photos 2016.html">PHOTOS 2016</a></li>
-                    <li><a href="photos 2017.html">PHOTOS 2015</a></li>
-                    <li><a href="conatct.html">CONTACT</a></li>
-                </ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle tour_nav" data-toggle="dropdown">OUR TOURS <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="Palermo.html" class="pal_nav">Palermo, Messina regions</a></li>
+                        <li><a href="ragusa.html" class="rag_nav">Ragusa region</a></li>
+                        <li><a href="FQS.html" class="faq_nav">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle about_nav" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
 
-            </li>
-        </ul>
-    </nav>
-    <!-- /#sidebar-wrapper -->
-        
-        
-<div id="page-content-wrapper">
-<!--right side menu button-->
-<button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
-        <span class="hamb-top"></span>
-        <span class="hamb-middle"></span>
-        <span class="hamb-bottom"></span>
-</button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="testimonial.html" class="test_nav">TESTIMONIALS</a></li>
+                        <li><a href="photos 2017.html" class="p217">PHOTOS 2017</a></li>
+                        <li><a href="photos 2016.html" class="p216">PHOTOS 2016</a></li>
+                        <li><a href="photos 2015.html" class="p215">PHOTOS 2015</a></li>
+                        <li><a href="conatct.html" class="con_nav">CONTACT</a></li>
+                    </ul>
 
-<!--Header-->
-        
-<header>
-
-        <nav class="navbar navbar-default tembus">
-        <div class="container-fliud">
-                <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="images/download.png" class="img-responsive" alt=""></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
-                        <li>
-                        <div class="dropdown">
-                                <button class="dropbtn">OUR TOURS</button>
-                                <div class="dropdown-content">
-                                <a href="Palermo.html">Palermo, Messina regions</a>
-                                <a href="ragusa.html">Ragusa region</a>
-                                <a href="FQS.html">FAQ</a>
-                                </div>
-                        </div>
-                        </li>
-                        <li>
-                                <div class="dropdown">
-                                        <button class="dropbtn">ABOUT</button>
-                                        <div class="dropdown-content">
-                                        <a href="testimonial.html">TESTIMONIALS</a>
-                                        <a href="photos 2017.html">PHOTOS 2017</a>
-                                        <a href="photos 2017.html">PHOTOS 2016</a>
-                                        <a href="photos 2017.html">PHOTOS 2015</a>
-                                        <a href="conatct.html">CONTACT</a>
-                                        </div>
-                                </div>
-                        </li>
-                </ul>
-                </div>
-        </div>
+                </li>
+            </ul>
         </nav>
+        <!-- /#sidebar-wrapper -->
 
-        <div class="banner4 clearfix">
-        <div class="color-overlay"></div>
-        <div class="tbl">
-                <div class="tbl-cell desc-wrapper">
-                <h1>TESTIMONIALS</h1>
-                <p>From guests of Sicilian Food Tours</p>
+
+        <div id="page-content-wrapper">
+            <!--right side menu button-->
+            <button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+
+            <header>
+
+                <nav class="navbar navbar-default tembus">
+                    <div class="container-fliud">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html"><img src="images/download.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropbtn tour_nav">OUR TOURS</a>
+                                        <div class="dropdown-content">
+                                            <a href="Palermo.html" class="pal_nav">PALERMO, MESSINA REGIONS</a>
+                                            <a href="ragusa.html" class="rag_nav">RAGUSA REGION </a>
+                                            <a href="FQS.html" class="faq_nav">FAQ</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropbtn about_nav">ABOUT</a>
+                                        <div class="dropdown-content">
+                                            <a href="testimonial.html" class="test_nav">TESTIMONIALS</a>
+                                            <a href="photos 2017.html" class="p217">PHOTOS 2017</a>
+                                            <a href="photos 2016.html" class="p216">PHOTOS 2016</a>
+                                            <a href="photos 2015.html" class="p215">PHOTOS 2015</a>
+                                            <a href="conatct.html" class="con_nav">CONTACT</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="banner clearfix" style="background: url('images/banners/palermo_banner.jpg')no-repeat">
+                    <div class=" color-overlay "></div>
+                    <div class="tbl ">
+                        <div class="tbl-cell desc-wrapper ">
+                            <h1>TESTIMONIALS</h1>
+                            <p>From guests of Sicilian Food Tours</p>
+                        </div>
+                    </div>
+
                 </div>
-        </div>
 
-        </div>
+            </header>
 
-</header>
+            <div class="main-page clearfix ">
+                <div class="row ">
+                    <div class="col-md-3 col-sm-4 visible-xs">
+                        <div class="left-side">
+                            <nav class="navbar navbar-fixed-right navbar-minimal animate" role="navigation">
+                                <div class="navbar-toggler animate">
+                                    <span class="menu-icon"></span>
+                                </div>
+                                <ul class="navbar-menu animate">
+                                    <li>
+                                        <a href="#about-us" class="animate">
+                                            <span class="desc animate"> <h2>Our tours</h2> </span>
+                                            <span class="glyphicon glyphicon-user"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#blog" class="animate">
+                                            <span class="desc animate"> <h3> PALERMO, MESSINA <br> REGIONS</h3> </span>
+                                            <span class="glyphicon glyphicon-info-sign"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact-us" class="animate">
+                                            <span class="desc animate"> <h4>RAGUSA REGION <br> FAQ</h4> </span>
+                                            <span class="glyphicon glyphicon-comment"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 hidden-xs">
+                        <div class="left-side">
+                            <h2>About</h2>
+                            <a href="testimonial.html" class="test_nav">TESTIMONIALS</a>
+                            <a href="photos 2017.html" class="p217">PHOTOS 2017</a>
+                            <a href="photos 2016.html" class="p216">PHOTOS 2016</a>
+                            <a href="photos 2015.html" class="p215">PHOTOS 2015</a>
+                            <a href="conatct.html" class="con_nav">CONTACT</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-4 ">
+                        <div class="pal-content ">
+                            <h1>
+                                They say a child is raised not by one person but by a village and travelling with Carm on her Sicilian Food Tours exposed this truth for me.
+                            </h1>
+                            <p>
+                                We didn’t just taste Sicilian food and wine, we were plunged into authentic Sicilian life, openly embraced by Carm’s famiglia and her ‘village’. The experience has stayed with me every day since.
+                            </p>
+                            <p>
+                                It was like travelling with a sister, who made me laugh and laugh and whose love of cannolli has inspired a lifelong addiction… not to mention a love of spaghetti vongole.
+                            </p>
+                            <p>
+                                This trip is not just about restaurant meals, it’s about discovering the source of food we put on our plate. It’s about sharing the pure joy of food and wine together with friends. It’s a memorable journey that reminds you to celebrate. Grazie mille.
+                            </p>
+                            <h1>
+                                I had a fabulous time in Sicily.
+                            </h1>
+                            <p>
+                                Some absolutely wonderful scenery, the history is amazing... then the food... what can I say – fresh ricotta/still warm, tomatoes like I have never tasted before, a seafood banquet that we couldn't finish and the 10 course degustation dinner – to mention
+                                a few of the delights we encountered travelling with the lovely Carmel on the 2014 food tour!
+                            </p>
+                            <h2>
+                                Thanks for a great time Carm!
+                            </h2>
+                            <div class="italic " style="margin-bottom:20px; ">
+                                – Marilyn
+                            </div>
+                            <h1>
+                                Travelling through beautiful Sicily with Carmel and Gina was an amazing adventure and I can't imagine anything else comparing.
+                            </h1>
+                            <p>
+                                Carmel's family and friends embraced us, welcomed us into their lives, hearts and homes with such warmth and passion it was truly something wonderful.
+                            </p>
+                            <p>
+                                Two things you should know....
+                            </p>
+                            <ol>
+                                <li>
+                                    <p>Be prepared to make lifelong friends.</p>
+                                </li>
+                                <li>
+                                    <p>Be prepared to laugh until you cry. Carmel and Gina are not just your guides they double as a Sicilian comedy duo. They are two very talented, funny women who will make your trip unforgettable.</p>
+                                </li>
+                            </ol>
+                            <p>
+                                I feel truly blessed to have experienced Sicily in such true Sicilian style and will cherish it always. Sincerest of thanks to you Carmel Ruggeri and Gina Milicia.
+                            </p>
+                            <div class="italic " style="margin-bottom:20px; ">
+                                – Kellie
+                            </div>
+                            <h1>
+                                What an extraordinary tour aimed at thrilling the soul and the senses.
+                            </h1>
+                            <p>
+                                Carmel Ruggeri has managed to put together an extraordinary tour of her island that captures the essence of true hospitality and love.
+                            </p>
+                            <p>
+                                She graciously opens the homes of her extended Sicilian family to you and makes you feel like you were a long lost beloved relative.
+                            </p>
+                            <div class="italic " style="margin-bottom: 20px; ">
+                                – Toula
+                            </div>
+                            <h1>
+                                You will laugh till you can’t breathe. You will eat till you regret not wearing your fat pants. You will see Sicilian sights that make your eyes weep.
+                            </h1>
+                            <p>
+                                Magic, magic, magic from start to finish. This is by far the BEST tour I have ever been on.
+                            </p>
+                            <p>
+                                This is a tour you must bring your posse on. Sicilian Food Tours is more than just a food tour, its a memory you will take to your grave
+                            </p>
+                            <p>
+                                If you want to go on a really really good foodie tour go with Carmel, my wife and I did the last tour and it was as good as it gets. You will see Sicily like a local not a tourist and go to places you would have no hope of seeing without a local like
+                                Carmel to guide you.
+                            </p>
+                            <div class="italic " style="margin-bottom: 2px; ">
+                                – Adrian
+                            </div>
 
-                        <div class="main-page clearfix">
-                                <div class="row">
-                                        <div class="col-md-3 col-sm-4 .d-sm-none .d-md-block">
-                                                <div class="left-side">
-                                                        <h2>About</h2>
-                                                        <h3>TESTIMONIALS</h3>
-                                                        <h4>PHOTOS 2017</h4>
-                                                        <h4>PHOTOS 2016</h4>
-                                                        <h4>PHOTOS 2015</h4>
-                                                </div>
-                                        </div>
-                                        <div class="col-md-5 col-sm-4">
-                                        <div class="pal-content">
-                                                <h1>
-                                                They say a child is raised not by one person but by a village and travelling with Carm on her Sicilian Food Tours exposed this truth for me.
-                                                </h1>
-                                                <p>
-                                                We didn’t just taste Sicilian food and wine, we were plunged into authentic Sicilian life, openly embraced by Carm’s famiglia and her ‘village’. The experience has stayed with me every day since.
-                                                </p>
-                                                <p>
-                                                It was like travelling with a sister, who made me laugh and laugh and whose love of cannolli  has inspired a lifelong addiction… not to mention a love of spaghetti vongole.  
-                                                </p>
-                                                <p>
-                                                This trip is not just about restaurant meals, it’s about discovering the source of food we put on our plate. It’s about sharing the pure joy of food and wine together with friends. It’s a memorable journey that reminds you to celebrate. Grazie mille.        
-                                                </p>
-                                                <h1>
-                                                I had a fabulous time in Sicily.
-                                                </h1>
-                                                <p>
-                                                Some absolutely wonderful scenery, the history is amazing... then the food... what can I say – fresh ricotta/still warm, tomatoes like I have never tasted before, a seafood banquet that we couldn't finish and the 10 course degustation dinner – to mention a few of the delights we encountered travelling with the lovely Carmel on the 2014 food tour!
-                                                </p>
-                                                <h2>
-                                                Thanks for a great time Carm!
-                                                </h2>
-                                                <div class="italic" style="margin-bottom:20px;">
-                                                – Marilyn
-                                                </div>
-                                                <h1>
-                                                Travelling through beautiful Sicily with Carmel and Gina was an amazing adventure and I can't imagine anything else comparing.
-                                                </h1>
-                                                <p>
-                                                Carmel's family and friends embraced us, welcomed us into their lives, hearts and homes with such warmth and passion it was truly something wonderful.
-                                                </p>
-                                                <p>
-                                                 Two things you should know....
-                                                </p>
-                                                <ol>
-                                                <li><p>Be prepared to make lifelong friends.</p></li>
-                                                <li><p>Be prepared to laugh until you cry. Carmel and Gina are not just your guides they double as a Sicilian comedy duo. They are two very talented, funny women who will make your trip unforgettable.</p></li>
-                                                </ol>
-                                                <p>
-                                                I feel truly blessed to have experienced Sicily in such true Sicilian style and will cherish it always. Sincerest of thanks to you Carmel Ruggeri and Gina Milicia.
-                                                </p>
-                                                <div class="italic" style="margin-bottom:20px;">
-                                                        – Kellie
-                                                </div>
-                                                <h1>
-                                                        What an extraordinary tour aimed at thrilling the soul and the senses.
-                                                </h1>
-                                                <p>
-                                                        Carmel Ruggeri has managed to put together an extraordinary tour of her island that captures the essence of true hospitality and love.
-                                                </p>
-                                                <p>
-                                                        She graciously opens the homes of her extended Sicilian family to you and makes you feel like you were a long lost beloved relative.
-                                                </p>
-                                                <div class="italic" style="margin-bottom: 20px;">
-                                                         – Toula
-                                                </div>
-                                                <h1>
-                                                         You will laugh till you can’t breathe. You will eat till you regret not wearing your fat pants. You will see Sicilian sights that make your eyes weep.
-                                                </h1>
-                                                <p>
-                                                        Magic, magic, magic from start to finish. This is by far the BEST tour I have ever been on.
-                                                </p>
-                                                <p>
-                                                        This is a tour you must bring your posse on. Sicilian Food Tours is more than just a food tour, its a memory you will take to your grave
-                                                </p>
-                                                <p>
-                                                        If you want to go on a really really good foodie tour go with Carmel, my wife and I did the last tour and it was as good as it gets. You will see Sicily like a local not a tourist and go to places you would have no hope of seeing without a local like Carmel to guide you.
-                                                </p>
-                                                <div class="italic" style="margin-bottom: 2px;">
-                                                                – Adrian
-                                                </div>
-
-
-                                        </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4">
-                                                <div class="pal-content pal-img">
-                                                        <img src="images/tes1.jpg" alt="">
-                                                        <img src="images/tes2.jpg" alt="">
-                                                        <img src="images/tes3.jpg" alt="">
-                                                        <img src="images/tes4.jpg" alt="">
-                                                        <img src="images/tes5.jpg" alt="">
-                                                </div>
-                                        </div><!-- end row -->
-                                </div> <!-- end palermo  -->
-
-                                <!--main-content-->
 
                         </div>
-
-                        <!--End page content wrapper-->
-
-
+                    </div>
+                    <div class="col-md-4 col-sm-4 ">
+                        <div class="pal-content pal-img ">
+                            <img src="images/tes1.jpg " alt=" ">
+                            <img src="images/tes2.jpg " alt=" ">
+                            <img src="images/tes3.jpg " alt=" ">
+                            <img src="images/tes4.jpg " alt=" ">
+                            <img src="images/tes5.jpg " alt=" ">
+                        </div>
+                    </div>
+                    <!-- end row -->
                 </div>
-                <!--End header, Body content-->
+                <!-- end palermo  -->
+
+                <!--main-content-->
+
+            </div>
+
+            <!--End page content wrapper-->
+
+
+        </div>
+        <!--End header, Body content-->
 
 
 
 
-                <div class="mini-footer">
-                        <i class="fa fa-facebook"></i>
-                </div>
+        <div class="mini-footer ">
+            <i class="fa fa-facebook "></i>
+        </div>
 
-                <footer>
-                        <p class="text-center"><a href="#">Contact Carmel</a>
-                                &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
-                </footer>
+        <footer>
+            <p class="text-center "><a href="# ">Contact Carmel</a> &nbsp; | &nbsp;&nbsp;<a href="# ">Facebook</a></p>
+        </footer>
 
         <script src="js/jquery-1.11.3.min.js "></script>
         <script src="js/bootstrap.min.js "></script>
         <script src="js/myscript.js "></script>
         <script src="js/owl.carousel.js "></script>
+        <script src="js/mansory.js "></script>
 
 </body>
 

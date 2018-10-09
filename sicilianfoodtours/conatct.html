@@ -2,248 +2,280 @@
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact</title>
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <Style>
+        .left-side .con_nav {
+            color: #000 !important;
+        }
+        
+        nav .con_nav {
+            color: #fff !important;
+        }
+        
+        .about_nav {
+            color: #fff !important;
+        }
+    </Style>
+
+
 </head>
 
 <body>
-        <div id="wrapper">
-                <div class="overlay"></div>
+    <div id="wrapper">
+        <div class="overlay"></div>
 
 
-                <!-- Sidebar -->
-                <nav class=" navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-                        <ul class="nav sidebar-nav">
+        <!-- Sidebar mobile -->
+        <nav class=" navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
 
+                <li>
+                    <a href="index.html" class="home_nav">Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle tour_nav" data-toggle="dropdown">OUR TOURS <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="Palermo.html" class="pal_nav">Palermo, Messina regions</a></li>
+                        <li><a href="ragusa.html" class="rag_nav">Ragusa region</a></li>
+                        <li><a href="FQS.html" class="faq_nav">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle about_nav" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="testimonial.html" class="test_nav">TESTIMONIALS</a></li>
+                        <li><a href="photos 2017.html" class="p217">PHOTOS 2017</a></li>
+                        <li><a href="photos 2016.html" class="p216">PHOTOS 2016</a></li>
+                        <li><a href="photos 2015.html" class="p215">PHOTOS 2015</a></li>
+                        <li><a href="conatct.html" class="con_nav">CONTACT</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+
+        <div id="page-content-wrapper">
+            <!--right side menu button-->
+            <button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+
+            <header>
+
+                <nav class="navbar navbar-default tembus">
+                    <div class="container-fliud">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html"><img src="images/download.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li> <a href="index.html" class="home_nav">Home</a></li>
                                 <li>
-                                        <a href="index.html">Home</a>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropbtn tour_nav">OUR TOURS</a>
+                                        <div class="dropdown-content">
+                                            <a href="Palermo.html" class="pal_nav">PALERMO, MESSINA REGIONS</a>
+                                            <a href="ragusa.html" class="rag_nav">RAGUSA REGION </a>
+                                            <a href="FQS.html" class="faq_nav">FAQ</a>
+                                        </div>
+                                    </div>
                                 </li>
-
-                                <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUR TOURS <span
-                                                        class="caret"></span></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                                <li><a href="Palermo.html">Palermo, Messina regions</a></li>
-                                                <li><a href="ragusa.html">Ragusa region</a></li>
-                                                <li><a href="FQS.html">FAQ</a></li>
-                                        </ul>
+                                <li>
+                                    <div class="dropdown">
+                                        <a href="#" class="dropbtn about_nav">ABOUT</a>
+                                        <div class="dropdown-content">
+                                            <a href="testimonial.html" class="test_nav">TESTIMONIALS</a>
+                                            <a href="photos 2017.html" class="p217">PHOTOS 2017</a>
+                                            <a href="photos 2016.html" class="p216">PHOTOS 2016</a>
+                                            <a href="photos 2015.html" class="p215">PHOTOS 2015</a>
+                                            <a href="conatct.html" class="con_nav">CONTACT</a>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT <span class="caret"></span></a>
-
-                                        <ul class="dropdown-menu" role="menu">
-
-                                                <li><a href="testimonial.html">TESTIMONIALS</a></li>
-                                                <li><a href="photos 2017.html">PHOTOS 2017</a></li>
-                                                <li><a href="#">PHOTOS 2016</a></li>
-                                                <li><a href="#">PHOTOS 2015</a></li>
-                                                <li><a href="conatct.html">CONTACT</a></li>
-                                        </ul>
-
-                                </li>
-                        </ul>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
-                <!-- /#sidebar-wrapper -->
+
+                <div class="banner clearfix" style="background: url('images/banners/contact.jpg')no-repeat">
+                    <div class="color-overlay"></div>
+                    <div class="tbl">
+                        <div class="tbl-cell desc-wrapper">
+                            <h1>CONTACT</h1>
+                            <p>Sicilian Food Tours</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="main-page clearfix">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 visible-xs">
+                        <div class="left-side">
+                            <nav class="navbar navbar-fixed-right navbar-minimal animate" role="navigation">
+                                <div class="navbar-toggler animate">
+                                    <span class="menu-icon"></span>
+                                </div>
+                                <ul class="navbar-menu animate">
+                                    <li>
+                                        <a href="#about-us" class="animate">
+                                            <span class="desc animate"> <h2>Our tours</h2> </span>
+                                            <span class="glyphicon glyphicon-user"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#blog" class="animate">
+                                            <span class="desc animate"> <h3> PALERMO, MESSINA <br> REGIONS</h3> </span>
+                                            <span class="glyphicon glyphicon-info-sign"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact-us" class="animate">
+                                            <span class="desc animate"> <h4>RAGUSA REGION <br> FAQ</h4> </span>
+                                            <span class="glyphicon glyphicon-comment"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 hidden-xs">
+                        <div class="left-side">
+                            <h2>About</h2>
+                            <a href="testimonial.html" class="test_nav">TESTIMONIALS</a>
+                            <a href="photos 2017.html" class="p217">PHOTOS 2017</a>
+                            <a href="photos 2016.html" class="p216">PHOTOS 2016</a>
+                            <a href="photos 2015.html" class="p215">PHOTOS 2015</a>
+                            <a href="conatct.html" class="con_nav">CONTACT</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-4 col-xs-12">
+
+                        <div class="pal-content">
+                            <!--Grid column-->
+                            <form id="contact-form">
+
+                                <!--Grid column-->
+                                <div class="col-md-6 col-sm-6 col-xs-6 padd-r">
+                                    <div class="md-form">
+                                        <p>Name*</p>
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">First Name</label>
+                                        <br>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6 col-sm-6 col-xs-6 padd-l">
+                                    <div class="md-form" style="margin-top:10px;">
+                                        <br><br>
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Last Name</label>
+                                        <br><br>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
 
 
-                <div id="page-content-wrapper">
-                        <!--right side menu button-->
-                        <button type="button" class="visible-xs hamburger is-closed" data-toggle="offcanvas">
-                                <span class="hamb-top"></span>
-                                <span class="hamb-middle"></span>
-                                <span class="hamb-bottom"></span>
-                        </button>
+                                <!--Grid row-->
 
-                        <!--Header-->
-
-                        <header>
-
-                                <nav class="navbar navbar-default tembus">
-                                        <div class="container-fliud">
-                                                <div class="navbar-header">
-                                                        <a class="navbar-brand" href="#"><img src="images/download.png"
-                                                                        class="img-responsive" alt=""></a>
-                                                </div>
-                                                <div class="collapse navbar-collapse" id="myNavbar">
-                                                        <ul class="nav navbar-nav navbar-right">
-                                                                <li><a href="index.html">Home</a></li>
-                                                                <li>
-                                                                        <div class="dropdown">
-                                                                                <button class="dropbtn">OUR TOURS</button>
-                                                                                <div class="dropdown-content">
-                                                                                        <a href="Palermo.html">Palermo,
-                                                                                                Messina regions</a>
-                                                                                        <a href="ragusa.html">Ragusa
-                                                                                                region</a>
-                                                                                        <a href="FQS.html">FAQ</a>
-                                                                                </div>
-                                                                        </div>
-                                                                </li>
-                                                                <li>
-                                                                        <div class="dropdown">
-                                                                                <button class="dropbtn">ABOUT</button>
-                                                                                <div class="dropdown-content">
-                                                                                        <a href="testimonial.html">TESTIMONIALS</a>
-                                                                                        <a href="photos 2017.html">PHOTOS
-                                                                                                2017</a>
-                                                                                        <a href="photos 2017.html">PHOTOS
-                                                                                                2016</a>
-                                                                                        <a href="photos 2017.html">PHOTOS
-                                                                                                2015</a>
-                                                                                        <a href="conatct.html">CONTACT</a>
-                                                                                </div>
-                                                                        </div>
-                                                                </li>
-                                                        </ul>
-                                                </div>
-                                        </div>
-                                </nav>
-
-                                <div class="banner5 clearfix">
-                                        <div class="color-overlay"></div>
-                                        <div class="tbl">
-                                                <div class="tbl-cell desc-wrapper">
-                                                        <h1>CONTACT</h1>
-                                                        <p>Sicilian Food Tours</p>
-                                                </div>
-                                        </div>
-
+                                <!--Grid row-->
+                                <div class="col-md-12 col-xs-12">
+                                    <div class="md-form">
+                                        <p>Email Address*</p>
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <br><br>
+                                    </div>
                                 </div>
 
-                        </header>
+                                <!--Grid column-->
+                                <div class="col-md-12 col-xs-12">
 
-                        <div class="main-page clearfix">
-                                <div class="row">
-                                        <div class="col-md-3 col-sm-4 .d-sm-none .d-md-block">
-                                                <div class="left-side">
-                                                        <h2>About</h2>
-                                                        <h4>TESTIMONIALS</h4>
-                                                        <h4>PHOTOS 2017</h4>
-                                                        <h4>PHOTOS 2016</h4>
-                                                        <h4>PHOTOS 2015</h4>
-                                                        <h3>CONTACT</h3>
-                                                </div>
-                                        </div>
+                                    <div class="md-form">
+                                        <p>Message*</p>
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <br>
+                                    </div>
 
-                                        <div class="col-md-5 col-sm-4 col-xs-12">
+                                    <div class="center-on-small-only">
+                                        <a class="btn btn-primary submit-btn">Submit</a>
+                                    </div>
+                                    <br>
+                                    <hr class="hr">
 
-                                                <div class="pal-content">
-                                                        <!--Grid column-->
-                                                        <form id="contact-form">
-
-                                                                <!--Grid column-->
-                                                                <div class="col-md-6 col-sm-6 col-xs-6 padd-r">
-                                                                        <div class="md-form">
-                                                                                <p>Name*</p>
-                                                                                <input type="text" id="name" name="name"
-                                                                                        class="form-control">
-                                                                                <label for="name" class="">First Name</label>
-                                                                                <br>
-                                                                        </div>
-                                                                </div>
-                                                                <!--Grid column-->
-
-                                                                <!--Grid column-->
-                                                                <div class="col-md-6 col-sm-6 col-xs-6 padd-l">
-                                                                        <div class="md-form" style="margin-top:10px;">
-                                                                                <br><br>
-                                                                                <input type="text" id="email" name="email"
-                                                                                        class="form-control">
-                                                                                <label for="email" class="">Last Name</label>
-                                                                                <br><br>
-                                                                        </div>
-                                                                </div>
-                                                                <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
 
 
-                                                                <!--Grid row-->
-
-                                                                <!--Grid row-->
-                                                                <div class="col-md-12 col-xs-12">
-                                                                        <div class="md-form">
-                                                                                <p>Email Address*</p>
-                                                                                <input type="text" id="subject" name="subject"
-                                                                                        class="form-control">
-                                                                                <br><br>
-                                                                        </div>
-                                                                </div>
-
-                                                                <!--Grid column-->
-                                                                <div class="col-md-12 col-xs-12">
-
-                                                                        <div class="md-form">
-                                                                                <p>Message*</p>
-                                                                                <textarea type="text" id="message" name="message"
-                                                                                        rows="2" class="form-control md-textarea"></textarea>
-                                                                                <br>
-                                                                        </div>
-
-                                                                        <div class="center-on-small-only">
-                                                                                <a class="btn btn-primary submit-btn">Submit</a>
-                                                                        </div>
-                                                                        <br>
-                                                                        <hr class="hr">
-
-                                                                </div>
-                                                                <!--Grid row-->
-
-
-                                                        </form>
-                                                        <!--Grid column-->
-                                                        <br>
-                                                        <ul>
-                                                                <li>Via Fratelli di Dio 33, Scoglitti, RG, Sicily,
-                                                                        Italy</li>
-                                                                <li>Email <span style="color:#e12c2f;">info@sicilianfoodtours.com</span></li>
-                                                                <li>Italy: +39 331 497 2468‬</li>
-                                                                <li>Australia: 0414 639 006</li>
-                                                        </ul>
-                                                </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4">
-                                                <div class="pal-content">
-                                                        <div class="pal-content pal-img">
-                                                                <img src="images/con-img.jpg" alt="">
-                                                                <div class="italic">
-                                                                        Carmel Ruggeri
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div><!-- end row -->
-                                </div> <!-- end palermo  -->
-                                <!--main-content-->
+                            </form>
+                            <!--Grid column-->
+                            <br>
+                            <ul>
+                                <li>Via Fratelli di Dio 33, Scoglitti, RG, Sicily, Italy
+                                </li>
+                                <li>Email <a href="mailto:'info@sicilianfoodtours.com'"><span style="color:#e12c2f;">info@sicilianfoodtours.com</span></a></li>
+                                <li>Italy: +39 331 497 2468‬</li>
+                                <li>Australia: 0414 639 006</li>
+                            </ul>
                         </div>
-
-                        <!--End page content wrapper-->
-
-
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="pal-content">
+                            <div class="pal-content pal-img">
+                                <img src="images/con-img.jpg" alt="">
+                                <div class="italic">
+                                    Carmel Ruggeri
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
                 </div>
-                <!--End header, Body content-->
+                <!-- end palermo  -->
+                <!--main-content-->
+            </div>
+
+            <!--End page content wrapper-->
+
+
+        </div>
+        <!--End header, Body content-->
 
 
 
 
-                <div class="mini-footer">
-                        <i class="fa fa-facebook"></i>
-                </div>
+        <div class="mini-footer">
+            <i class="fa fa-facebook"></i>
+        </div>
 
-                <footer>
-                        <p class="text-center"><a href="#">Contact Carmel</a>
-                                &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
-                </footer>
+        <footer>
+            <p class="text-center"><a href="#">Contact Carmel</a> &nbsp; | &nbsp;&nbsp;<a href="#">Facebook</a></p>
+        </footer>
 
-                <script src="js/jquery-1.11.3.min.js "></script>
-    <script src="js/bootstrap.min.js "></script>
-    <script src="js/myscript.js "></script>
-    <script src="js/owl.carousel.js "></script>
+        <script src="js/jquery-1.11.3.min.js "></script>
+        <script src="js/bootstrap.min.js "></script>
+        <script src="js/myscript.js "></script>
+        <script src="js/owl.carousel.js "></script>
 
 </body>
 
